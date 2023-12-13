@@ -1,0 +1,22 @@
+dateModified: 1702471619
+email:
+  fromEmail: brosch@webhub.de
+  fromName: 'b-aware Kollektiv AWARENESS BERLIN'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    40c3d08d-de67-43fd-b78e-08b64367c633: Common # Common
+    95121e66-126c-4507-ab4c-5b40c8aafa82: 'b-aware Kollektiv AWARENESS BERLIN' # b-aware Kollektiv AWARENESS BERLIN
+    aac80bdf-73ca-4d4b-958f-c9e8fecc66fe: 'b-aware Kollektiv AWARENESS BERLIN' # b-aware Kollektiv AWARENESS BERLIN
+system:
+  edition: solo
+  live: true
+  name: 'b-aware Kollektiv AWARENESS BERLIN'
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
