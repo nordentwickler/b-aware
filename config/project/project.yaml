@@ -1,4 +1,4 @@
-dateModified: 1702471619
+dateModified: 1702471668
 email:
   fromEmail: brosch@webhub.de
   fromName: 'b-aware Kollektiv AWARENESS BERLIN'
@@ -8,6 +8,11 @@ meta:
     40c3d08d-de67-43fd-b78e-08b64367c633: Common # Common
     95121e66-126c-4507-ab4c-5b40c8aafa82: 'b-aware Kollektiv AWARENESS BERLIN' # b-aware Kollektiv AWARENESS BERLIN
     aac80bdf-73ca-4d4b-958f-c9e8fecc66fe: 'b-aware Kollektiv AWARENESS BERLIN' # b-aware Kollektiv AWARENESS BERLIN
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
