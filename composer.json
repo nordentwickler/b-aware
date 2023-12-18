@@ -1,7 +1,7 @@
 {
   "require": {
     "craftcms/ckeditor": "3.6.0",
-    "craftcms/cms": "^4.4.0",
+    "craftcms/cms": "4.5.13",
     "craftcms/contact-form": "3.0.1",
     "ether/seo": "4.2.1",
     "nystudio107/craft-vite": "^4.0",
