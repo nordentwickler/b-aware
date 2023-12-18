@@ -1,0 +1,9 @@
+baseUrl: '@web/en'
+enabled: '1'
+handle: bAwareKollektivEn
+hasUrls: true
+language: en
+name: 'b-aware Kollektiv EN'
+primary: false
+siteGroup: aac80bdf-73ca-4d4b-958f-c9e8fecc66fe # b-aware Kollektiv 
+sortOrder: 2

@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
 language: de-DE
-name: 'b-aware Kollektiv AWARENESS BERLIN'
+name: 'b-aware Kollektiv'
 primary: true
-siteGroup: aac80bdf-73ca-4d4b-958f-c9e8fecc66fe # b-aware Kollektiv AWARENESS BERLIN
+siteGroup: aac80bdf-73ca-4d4b-958f-c9e8fecc66fe # b-aware Kollektiv 
 sortOrder: 1

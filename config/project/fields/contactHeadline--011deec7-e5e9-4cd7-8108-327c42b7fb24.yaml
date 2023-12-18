@@ -1,0 +1,19 @@
+columnSuffix: hxftuhjg
+contentColumnType: text
+fieldGroup: 1174c6d2-258f-4569-8dc3-77d5158f847d # Settings
+handle: contactHeadline
+instructions: null
+name: Überschrift
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

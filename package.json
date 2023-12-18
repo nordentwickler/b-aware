@@ -23,6 +23,7 @@
     "vite-plugin-restart": "^0.2.0"
   },
   "dependencies": {
+    "swiper": "^11.0.5",
     "vue": "^3.2.41"
   }
 }

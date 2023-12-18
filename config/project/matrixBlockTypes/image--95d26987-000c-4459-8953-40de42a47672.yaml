@@ -1,0 +1,75 @@
+field: e1f04add-99dc-4c26-ba6b-9aa9d53775bb # Inhalt
+fieldLayouts:
+  a2dff1c1-e5c3-4d79-8f3a-b292e8f69aa4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0ac8f27f-2c83-48a0-91c0-542b13b5bc8d # Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67f800f7-ce9a-4095-8d60-faa339b5ae02
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a211caa3-dafa-42e8-a2b3-fb6be11c33a7
+        userCondition: null
+fields:
+  0ac8f27f-2c83-48a0-91c0-542b13b5bc8d: # Bild
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Bild
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:4f11c230-3baa-4c2a-a5b6-f188afb0653e' # Bilder
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:4f11c230-3baa-4c2a-a5b6-f188afb0653e' # Bilder
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:4f11c230-3baa-4c2a-a5b6-f188afb0653e' # Bilder
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: image
+name: Bild
+sortOrder: 7

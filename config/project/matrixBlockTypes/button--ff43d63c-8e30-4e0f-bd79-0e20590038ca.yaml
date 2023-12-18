@@ -1,0 +1,92 @@
+field: e1f04add-99dc-4c26-ba6b-9aa9d53775bb # Inhalt
+fieldLayouts:
+  1c9dbd00-9c77-45b8-b776-d278fc970a98:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 44e27a57-5f79-4a85-8111-0035d97ae7f5 # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3319676c-2e2d-4701-8105-50840fbf2571
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dd1aa492-13e2-411e-92a6-b41088969c86
+        userCondition: null
+fields:
+  44e27a57-5f79-4a85-8111-0035d97ae7f5: # Button
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: button
+    instructions: null
+    name: Button
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: true
+      autoNoReferrer: true
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: ''
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources:
+            - 'volume:5be2d2a3-d3a1-4afd-bd96-316e7c102020' # Dateien
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources:
+            - singles
+            - 'section:40bbfc69-d990-4bff-b2a0-195c12380074' # Seiten
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: site
+    type: lenz\linkfield\fields\LinkField
+handle: button
+name: Button
+sortOrder: 5

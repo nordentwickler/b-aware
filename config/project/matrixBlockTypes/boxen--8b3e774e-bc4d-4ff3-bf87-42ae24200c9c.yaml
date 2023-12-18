@@ -1,0 +1,205 @@
+field: e1f04add-99dc-4c26-ba6b-9aa9d53775bb # Inhalt
+fieldLayouts:
+  ee3c362c-78c4-44c5-bdf5-e1a39382b220:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d2dbb30f-819d-4263-b35e-662df11f097b # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08619272-0f6b-4a8f-89de-9105c4f30cf2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9ffffc94-02a3-45ad-b88e-3fd2064c640f # Überschriften Typ
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5f42af63-9f11-4906-b32e-77fe3f3659d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e4ea66de-b364-48c9-b519-aa24a6826bac # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80e8564e-ed7f-4a23-9726-61f12a3f397c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1b8eb24e-6cca-406d-8c0d-3a1987cba42b # Boxen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ededbeaa-ea2d-4b42-9c04-2afe4541cb16
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ae3a976a-d079-4b20-88cf-bb1beaa7fd6b # Pinker Hintergrund
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 833ffe66-74bd-4812-991b-e26cc77f8f5a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dd5ecebf-d125-438d-933e-3339f248890d
+        userCondition: null
+fields:
+  1b8eb24e-6cca-406d-8c0d-3a1987cba42b: # Boxen
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: boxen
+    instructions: null
+    name: Boxen
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      sources:
+        - 'section:533fbe08-ef5d-416e-b751-ed7b35818f0a' # Boxes
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  9ffffc94-02a3-45ad-b88e-3fd2064c640f: # Überschriften Typ
+    columnSuffix: qgejlphg
+    contentColumnType: string(2)
+    fieldGroup: null
+    handle: headlineType
+    instructions: null
+    name: 'Überschriften Typ'
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - H2
+            -
+              - value
+              - h2
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - H3
+            -
+              - value
+              - h3
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  ae3a976a-d079-4b20-88cf-bb1beaa7fd6b: # Pinker Hintergrund
+    columnSuffix: oibkpycq
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: pinkBg
+    instructions: null
+    name: 'Pinker Hintergrund'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  d2dbb30f-819d-4263-b35e-662df11f097b: # Überschrift
+    columnSuffix: mytwwsef
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 2
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  e4ea66de-b364-48c9-b519-aa24a6826bac: # Text
+    columnSuffix: fdnyersn
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 1f388f94-ec84-467a-8d39-fa0ca3a209a3 # Simple
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\ckeditor\Field
+handle: boxen
+name: Boxen
+sortOrder: 3

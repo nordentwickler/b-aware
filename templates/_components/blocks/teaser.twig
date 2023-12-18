@@ -1,0 +1,14 @@
+<div class="bg-primary text-white rounded-[30px] my-12 p-8 lg:p-16">
+    {% if icon %}
+        {{ svg(icon)|attr({ class: 'text-white fill-current h-24 w-auto mb-8 mx-auto' }) }}
+
+    {% endif %}
+{% include '_components/blocks/text.twig' with {
+    headlineType: 'h3',
+    headline: headline,
+    headlineClasses: 'text-white',
+    text: text,
+    button: button,
+    buttonColor: 'white'
+} %}
+</div>

@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: slides
+name: Slides
+propagationMethod: all
+siteSettings:
+  95121e66-126c-4507-ab4c-5b40c8aafa82: # b-aware Kollektiv
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: e9dea80a-ad77-48ea-b8b2-4f83257690a4
+type: structure

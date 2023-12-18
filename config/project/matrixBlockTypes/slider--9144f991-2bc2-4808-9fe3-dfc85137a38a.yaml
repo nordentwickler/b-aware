@@ -1,0 +1,142 @@
+field: e1f04add-99dc-4c26-ba6b-9aa9d53775bb # Inhalt
+fieldLayouts:
+  aa65952e-fe62-4416-99da-0dc9c4b3d649:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e6992b9b-5c55-47bf-aa25-5029b819e4f4 # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 498ca267-6a4c-4d6e-8fc9-9c4ed66558f2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f5cef92f-f3c5-4dc8-ae85-e89bb8fc9fb6 # Überschriften Typ
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 87643dd1-af3f-41cb-800f-ffa8d6a6a754
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 83909f7b-2fea-4c92-9a40-6d0fc9e8d156 # Slides
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 334ee42c-4f75-4923-9af0-89eb392d8ff9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f2eb4ca6-e057-42d8-8f1a-52b69e6e956c
+        userCondition: null
+fields:
+  83909f7b-2fea-4c92-9a40-6d0fc9e8d156: # Slides
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: slides
+    instructions: null
+    name: Slides
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      sources:
+        - 'section:ed3eff32-9003-4681-94ad-8efe449bcc95' # Slides
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  e6992b9b-5c55-47bf-aa25-5029b819e4f4: # Überschrift
+    columnSuffix: tbtuwtfy
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 2
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  f5cef92f-f3c5-4dc8-ae85-e89bb8fc9fb6: # Überschriften Typ
+    columnSuffix: aqzuovdt
+    contentColumnType: string(2)
+    fieldGroup: null
+    handle: headlineType
+    instructions: null
+    name: 'Überschriften Typ'
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - H2
+            -
+              - value
+              - h2
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - H3
+            -
+              - value
+              - h3
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: slider
+name: Slider
+sortOrder: 4

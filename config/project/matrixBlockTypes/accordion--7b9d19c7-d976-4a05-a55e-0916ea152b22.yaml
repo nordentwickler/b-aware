@@ -1,0 +1,142 @@
+field: e1f04add-99dc-4c26-ba6b-9aa9d53775bb # Inhalt
+fieldLayouts:
+  607dee80-0c4e-46a6-9725-9d53c15945f4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ddf0f5a7-6220-4ac7-a17c-5bfb707cba5a # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 18368bd8-ed3a-4f37-b95c-75cdeb1f3faf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 403909c2-4900-4747-8252-17343816cb0e # Überschriften Typ
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 178aa08d-a4b7-42cd-98bf-d34cbd3babff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8c78a235-6f44-4067-ac05-9940d78c9f7e # Elemente
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4fcf9e6-8cd1-48a6-be44-566422ec156d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ed4f4540-6079-4d09-a4b1-23c1e7abf8b9
+        userCondition: null
+fields:
+  8c78a235-6f44-4067-ac05-9940d78c9f7e: # Elemente
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: accordions
+    instructions: null
+    name: Elemente
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      sources:
+        - 'section:ac1633ec-21c4-4c62-ab5b-843117f4aed1' # Akkordion
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  403909c2-4900-4747-8252-17343816cb0e: # Überschriften Typ
+    columnSuffix: bokmkakp
+    contentColumnType: string(2)
+    fieldGroup: null
+    handle: headlineType
+    instructions: null
+    name: 'Überschriften Typ'
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - H2
+            -
+              - value
+              - h2
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - H3
+            -
+              - value
+              - h3
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  ddf0f5a7-6220-4ac7-a17c-5bfb707cba5a: # Überschrift
+    columnSuffix: yvuqnoxm
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: accordion
+name: Accordion
+sortOrder: 6

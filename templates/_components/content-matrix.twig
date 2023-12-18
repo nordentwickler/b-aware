@@ -1,0 +1,149 @@
+{% do craft.app.elements.eagerLoadElements(
+    className(entry),
+    [entry],
+    [
+        'contentMatrix',
+        'contentMatrix.button:buttonEntry',
+        'contentMatrix.faq:faqEntries',
+        'contentMatrix.c2a:c2aElement',
+        'contentMatrix.c2a:c2aElement.icon',
+        'contentMatrix.c2a:c2aElement.button',
+        'contentMatrix.c2a:c2aElement.button.intern:internPage',
+        'contentMatrix.slider:slides',
+        'contentMatrix.boxen:boxen',
+        'contentMatrix.accordion:accordions',
+        'contentMatrix.logos:logos',
+        'contentMatrix.image:image'
+    ]
+) %}
+
+{% set contentMatrix = entry.contentMatrix %}
+{% for block in contentMatrix %}
+    {% switch block.type %}
+    {% case 'text' %}
+        {% if block.pinkBg %}
+            <section class="bg-primary py-12 my-6 lg:py-24 lg:my-12 text-white">
+                <div class="container max-w-6xl">
+                    {% include '_components/blocks/text.twig' with{
+                        headlineType: block.headlineType,
+                        headline: block.headline,
+                        headlineClasses: 'text-white',
+                        text: block.text,
+                    } %}
+                </div>
+            </section>
+        {% else %}
+            <section class="py-12">
+                <div class="container max-w-6xl">
+                    {% include '_components/blocks/text.twig' with {
+                        headlineType: block.headlineType,
+                        headline: block.headline,
+                        headlineClasses: 'text-primary',
+                        text: block.text,
+                    } %}
+                </div>
+            </section>
+        {% endif %}
+
+    {% case 'headline' %}
+        {% if block.pinkBg %}
+            <section class="bg-pink py-24 my-12 text-white">
+                <div class="container max-w-6xl">
+                    {% include '_atoms/headline.twig' with {
+                        headlineType: block.headlineType,
+                        headline: block.headline,
+                    } %}
+                </div>
+            </section>
+        {% else %}
+            <section class="py-12 ">
+                <div class="container max-w-6xl">
+                    {% include '_atoms/headline.twig' with {
+                        headlineType: block.headlineType,
+                        headline: block.headline,
+                    } %}
+                </div>
+            </section>
+        {% endif %}
+    {% case 'button' %}
+        <section class="px-4 pb-8 lg:pb-12">
+            {% include '_atoms/button.twig' with {
+                button: block.button,
+            } %}
+        </section>
+    {% case 'slider' %}
+        <section class="bg-primary py-24 my-12 text-white">
+            <div class="container max-w-6xl">
+                {% include '_components/blocks/slider.twig' with{
+                    id: 'slider' ~ block.id,
+                    slides: block.slides,
+                } %}
+            </div>
+        </section>
+    {% case 'accordion' %}
+        <section class="py-12">
+            <div class="container max-w-6xl">
+                <h2 class="text-4xl text-primary">{{ block.headline }}</h2>
+                <div class="divide-y divide-primary border-t border-b border-primary">
+                    {% for accordion in block.accordions %}
+                        <accordion-item title="{{ accordion.title }}">
+                            <div class="typo pb-12">
+                                {{ accordion.text }}
+                            </div>
+                        </accordion-item>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    {% case 'image' %}
+        <section>
+            <div class="container">
+                {% include '_atoms/image.twig' with {
+                    image: block.image[0],
+                    mode: 'crop',
+                    ratio: 16/9,
+                    pictureClass: 'flex justify-center my-6 lg:my-12',
+                    breakpoints: [
+                        { width: 1600 },
+                        { width: 736 }
+                    ]
+                } %}
+            </div>
+        </section>
+
+    {% case 'boxen' %}
+        {% if block.pinkBg %}
+            <section class="bg-primary py-24 my-12 text-white">
+                <div class="container max-w-6xl">
+                    {% include '_components/blocks/text.twig' with{
+                        headlineType: block.headlineType,
+                        headline: block.headline,
+                        headlineClasses: 'text-white',
+                        text: block.text,
+                    } %}
+
+                    {% include '_components/blocks/boxen.twig' with {
+                        boxes: block.boxen,
+                        color: 'white'
+                    } %}
+                </div>
+            </section>
+        {% else %}
+            <section class="py-12">
+                <div class="container max-w-6xl">
+                    {% include '_components/blocks/text.twig' with {
+                        headlineType: block.headlineType,
+                        headline: block.headline,
+                        headlineClasses: 'text-primary',
+                        text: block.text,
+                    } %}
+
+                    {% include '_components/blocks/boxen.twig' with {
+                        boxes:block.boxen
+                    } %}
+                </div>
+            </section>
+        {% endif %}
+
+    {% endswitch %}
+{% endfor %}

@@ -1,0 +1,27 @@
+<slider :next-id="'next-'+ {{ id }}" :prev-id="'prev-'+ {{ id }}" :length="{{ slides|length }}">
+    {% for entry in slides %}
+        <swiper-slide>
+            {% include '_atoms/headline.twig' with {
+                headlineType: 'h2',
+                headline: entry.title,
+                classes: 'text-white'
+            } %}
+            {% if  entry.button is defined and entry.button.getLink|length %}
+
+                <div class="text-center typo">
+                    {{ entry.text }}
+                </div>
+                <div class="mt-12 relative px-[80px] lg:px-0">
+                    {% include '_atoms/button.twig' with {
+                        button:  entry.button,
+                        buttonColor: 'white',
+                    } %}
+                </div>
+            {% else %}
+                <div class="text-center typo pb-[108px]">
+                    {{ entry.text }}
+                </div>
+            {% endif %}
+        </swiper-slide>
+    {% endfor %}
+</slider>

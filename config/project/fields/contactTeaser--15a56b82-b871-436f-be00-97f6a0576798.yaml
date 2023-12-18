@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 1174c6d2-258f-4569-8dc3-77d5158f847d # Settings
+handle: contactTeaser
+instructions: null
+name: Teaser
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_contactteaser}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

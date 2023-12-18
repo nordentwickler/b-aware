@@ -1,0 +1,20 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pages
+name: Seiten
+propagationMethod: all
+siteSettings:
+  95121e66-126c-4507-ab4c-5b40c8aafa82: # b-aware Kollektiv
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/default.twig
+    uriFormat: '{slug}'
+  b0c5c514-091f-4684-8b80-874d45688d19: # b-aware Kollektiv EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/default.twig
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: f03e8782-143f-4759-96b4-9cf174a784d9
+type: structure

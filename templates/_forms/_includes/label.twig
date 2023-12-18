@@ -1,0 +1,17 @@
+{# Even when hidden, the label should be output for accessibility #}
+{% if labelPosition.shouldDisplay(position) or (labelPosition == 'hidden' and position == 'above') %}
+    {% fieldtag 'fieldLabel' %}
+        {{- field.name | t('formie') | raw -}}
+
+        {%- if field.required ?? required ?? false -%}
+            &nbsp;{{ fieldtag('fieldRequired', { text: '*' | t('formie') }) }}
+        {%- endif -%}
+
+        {# Allow extra content to be passed in #}
+        {%- set labelExtraContent = labelExtraContent ?? renderOptions.labelExtraContent ?? null -%}
+
+        {%- if labelExtraContent -%}
+            {{ labelExtraContent | raw }}
+        {%- endif -%}
+    {% endfieldtag %}
+{% endif %}

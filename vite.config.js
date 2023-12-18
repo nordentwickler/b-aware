@@ -4,7 +4,6 @@ import path from 'path';
 import vue from '@vitejs/plugin-vue';
 import viteCompression from 'vite-plugin-compression';
 import ViteRestart from 'vite-plugin-restart';
-import critical from 'rollup-plugin-critical';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
@@ -34,15 +33,6 @@ export default defineConfig(({ command, mode }) => {
             }),
             ViteRestart({
                 reload: ['templates/**/*'],
-            }),
-            critical({
-                criticalUrl:
-                    env.CRAFT_ENVIRONMENT === 'dev'
-                        ? 'http://localhost/'
-                        : env.PRIMARY_SITE_URL,
-                criticalBase: './public/dist/criticalcss/',
-                criticalPages: [{ uri: '', template: 'index' }],
-                criticalConfig: {},
             }),
         ],
         publicDir: path.resolve(__dirname, 'src/public'),

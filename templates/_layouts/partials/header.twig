@@ -1,3 +1,26 @@
-<header>
-
-</header>
+<navigation site-url="{{ siteUrl }}">
+    <nav>
+        <ul>
+            {% for page in settings.mainNavigation %}
+                <li class="font-bold text-lg sm:text-2xl lg:text-3xl upper-case text-center">
+                    <a href="{{ page.url }}"
+                       class="text-white">
+                        {{ page.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <ul class="flex flex-col sm:flex-row justify-center items-center my-8">
+        {% for page in settings.footerNavigation %}
+            <li class="text-base lg:text-xl">
+                <a href="{{ page.url }}"
+                   class="text-white">
+                    {{ page.title }}
+                </a>
+                {{ not loop.last ? '<span class="mx-4 hidden sm:inline-flex text-white">/</span>' }}
+            </li>
+        {% endfor %}
+    </ul>
+    <p class="text-white text-lg text-center">© {{ now|date('Y') }} — b-aware Kollektiv — Awareness Berlin</p>
+</navigation>

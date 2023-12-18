@@ -1,0 +1,20 @@
+defaultPlacement: end
+enableVersioning: true
+handle: boxes
+name: Boxes
+propagationMethod: all
+siteSettings:
+  95121e66-126c-4507-ab4c-5b40c8aafa82: # b-aware Kollektiv
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  b0c5c514-091f-4684-8b80-874d45688d19: # b-aware Kollektiv EN
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 7c5aefe9-83c5-44e4-b014-14bf46d9fa41
+type: structure

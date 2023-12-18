@@ -1,0 +1,5 @@
+{% set headlineType = headlineType is defined ? headlineType : 'h2' %}
+{% set classes = classes is defined ? classes : 'text-primary' %}
+<{{ headlineType }} class="{{ classes }}">
+    {{ headline|nl2br }}
+</{{ headlineType }}>

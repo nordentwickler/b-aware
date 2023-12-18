@@ -1,0 +1,14 @@
+columnSuffix: dcqgcbxg
+contentColumnType: boolean
+fieldGroup: 40c3d08d-de67-43fd-b78e-08b64367c633 # Common
+handle: hideContact
+instructions: null
+name: 'Kontaktblock auslbenden'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

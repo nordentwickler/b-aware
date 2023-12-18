@@ -1,0 +1,21 @@
+{% set headlineClasses = headlineClasses is defined ? headlineClasses : null %}
+
+{% if headline is defined and headlineType is defined %}
+    {% include '_atoms/headline.twig' with{
+        headlineType: headlineType,
+        headline: headline,
+        classes: headlineClasses
+    } %}
+{% endif %}
+
+<div class="text-center typo">
+    {{ text }}
+</div>
+
+{% if button is defined %}
+    <div class="mt-12 relative">
+        {% include '_atoms/button.twig' with {
+            button: button,
+        } %}
+    </div>
+{% endif %}

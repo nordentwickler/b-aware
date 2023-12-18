@@ -1,0 +1,154 @@
+fieldLayouts:
+  9c17b42d-4846-42c5-bd12-7a97c729c122:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0d223875-e089-4e2f-9d48-e38c1c5f338d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d1dfed1c-7fe3-419a-87c0-514df0e76834 # Hauptnavigation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49ad883e-17e7-4800-b575-aab8dc5df686
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0c57faf4-05ad-42af-b124-9738fbe47123 # Metanavigation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e3bff95d-e246-4494-9ce5-c631a42730ff
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 1f62745a-ddc0-4824-ae10-43abbe8f2120
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 011deec7-e5e9-4cd7-8108-327c42b7fb24 # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc76481e-588f-446b-b94e-c63e5236a1b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f44d8718-8502-4a91-bb1b-2ec3d2dfd3cc # Subline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92dadd84-549c-4f76-b390-b87f7e75e42d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f0222c0-eb94-44c8-af59-eeb036164579 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44200951-cc10-4e2d-bf38-09be29fe8318
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 39d0bf3b-eea9-4c58-83f1-0393543b6945 # E-Mail
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bbfecf64-9469-4d7e-b00e-19ce40f15b79
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1052a541-ec0e-4c68-b2ce-9a272db3f798 # Kontaktformular
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 006cb79b-108a-4e95-85cc-0bcb49ff6312
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 977d1fcc-a659-4b82-aceb-b0929d184676
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 15a56b82-b871-436f-be00-97f6a0576798 # Teaser
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d55c61b-96a3-4ba7-8a50-1c54aef39291
+            userCondition: null
+            warning: null
+            width: 100
+        name: Kontakt
+        uid: 5b081603-ef9d-4b29-b099-056ea5b56347
+        userCondition: null
+handle: settings
+hasTitleField: false
+name: Einstellungen
+section: c41e4f4a-d355-40f8-ba9e-6d1fca7c77e0 # Einstellungen
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

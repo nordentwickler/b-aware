@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('assets/fonts/JosefinSans-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('assets/fonts/JosefinSans-Bold.ttf');
+    font-weight: bold;
+}
+
+body{
+    @apply bg-white dark:bg-secondary font-sans text-secondary dark:text-white;
+}
+
+h1, h2, h3{
+    @apply text-center;
+}
+
+h1{
+    @apply text-4xl lg:text-5xl font-bold mb-8 lg:mb-16;
+}
+
+h2{
+    @apply text-4xl lg:text-5xl font-bold mb-6 lg:mb-12;
+}
+
+h3{
+    @apply text-xl lg:text-2xl font-bold mb-4 lg:mb-8;
+}
+
+.typo{
+    @apply text-lg lg:text-xl;
+
+    &--primary{
+        @apply text-primary;
+    }
+    p + p{
+        @apply mt-12;
+    }
+
+    ul{
+        @apply my-12;
+    }
+
+    ol{
+        @apply my-12;
+    }
+}

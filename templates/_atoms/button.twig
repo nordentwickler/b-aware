@@ -1,0 +1,11 @@
+{% set color = buttonColor is defined ? buttonColor : 'primary' %}
+{% set btnClasses = ' font-bold border-2 rounded-[30px] text-lg lg:text-xl py-2 px-4 lg:w-[360px] flex justify-center items-center text-center mx-auto z-30' %}
+{% if color == 'primary' %}
+    {{ button.getLink({
+        class: 'text-primary border-primary hover:bg-primary hover:text-white' ~ btnClasses,
+    }) }}
+{% else %}
+    {{ button.getLink({
+        class: 'text-white border-white hover:bg-white hover:text-primary' ~ btnClasses,
+    }) }}
+{% endif %}

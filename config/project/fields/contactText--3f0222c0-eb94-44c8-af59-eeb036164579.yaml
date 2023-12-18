@@ -1,0 +1,23 @@
+columnSuffix: vixtcfdc
+contentColumnType: text
+fieldGroup: 1174c6d2-258f-4569-8dc3-77d5158f847d # Settings
+handle: contactText
+instructions: null
+name: Text
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 1f388f94-ec84-467a-8d39-fa0ca3a209a3 # Simple
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\ckeditor\Field

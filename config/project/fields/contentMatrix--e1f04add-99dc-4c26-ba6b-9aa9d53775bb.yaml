@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 830f6d57-167b-4a13-8f21-ca42595ff2dc # Content
+handle: contentMatrix
+instructions: null
+name: Inhalt
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_contentmatrix}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

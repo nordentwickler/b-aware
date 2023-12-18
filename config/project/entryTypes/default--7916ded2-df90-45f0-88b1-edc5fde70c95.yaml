@@ -1,0 +1,89 @@
+fieldLayouts:
+  6beded8a-f049-45b3-9926-f385c1096850:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3192852b-036a-4ab7-bd7b-1a146caab582
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b46d75c1-f4e3-44f0-b6b4-55c72f1f314f # Kontaktblock auslbenden
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d178758-0a8f-48a2-be0d-e375e18a18db
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e1f04add-99dc-4c26-ba6b-9aa9d53775bb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cbfb7dc-929e-4e91-b45c-aff69566e6e8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 030ead4c-4684-43ba-988d-bc843895e20a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2cd21525-a1e4-4c17-88fb-57e3d404b5e4 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f1e01828-329e-4e13-9c65-bc5e705c625f
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: c83e3f28-f9ca-4b2a-822c-00b9feb06eac
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: 40bbfc69-d990-4bff-b2a0-195c12380074 # Seiten
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

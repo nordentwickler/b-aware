@@ -1,0 +1,71 @@
+fieldLayouts:
+  eb082ff5-fc65-4b3a-a9db-55067a106c17:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 36d8b4b9-0744-4464-83cb-b82f0b20c8da
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f26df144-21d0-4835-942e-b4a4425fe8c0 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61a2c0c1-913c-4865-88f6-cf8b52a75a64
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d8782a07-f62f-4834-a9f4-964881f7bc00 # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a845bbea-8669-4c96-8558-a48e46965af3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 4cc66db4-1e15-4050-a264-a1a98654fc42
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: ed3eff32-9003-4681-94ad-8efe449bcc95 # Slides
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

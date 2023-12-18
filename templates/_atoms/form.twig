@@ -1,0 +1,315 @@
+{{ craft.formie.renderForm(form, {
+    themeConfig: {
+        resetClasses: true,
+
+        formTitle: {
+            attributes: {
+                class: 'text-lg leading-6 font-medium text-gray-900',
+            },
+        },
+
+        alertError: {
+            attributes: {
+                class: 'rounded-[30px] bg-red-50 text-xl text-red-500  px-6 pt-4 pb-3 mb-4',
+            },
+        },
+
+        alertSuccess: {
+            attributes: {
+                class: 'rounded-[30px] bg-green-50 text-xl text-green-700  px-6 pt-4 pb-3 mb-4',
+            },
+        },
+
+        buttonWrapper: {
+            attributes: {
+                class: [
+                    'flex justify-start -mx-2',
+                    "{{ buttonsPosition == 'right' ? 'justify-end' }}",
+                    "{{ buttonsPosition == 'center' ? 'justify-center' }}",
+                    "{{ buttonsPosition == 'left-right' ? 'justify-between' }}",
+                    "{{ buttonsPosition == 'right-save-left' ? 'justify-start flex-row-reverse' }}",
+                    "{{ buttonsPosition == 'center-save-left' ? 'justify-center flex-row-reverse' }}",
+                    "{{ buttonsPosition == 'center-save-right' ? 'justify-center' }}",
+                    "{{ buttonsPosition == 'save-right' ? 'justify-between' }}",
+                    "{{ buttonsPosition == 'save-left' ? 'justify-between flex-row-reverse' }}",
+                ],
+            },
+        },
+
+        buttonContainer: {
+            attributes: {
+                class: 'flex justify-start',
+            },
+        },
+
+        saveButton: {
+            attributes: {
+                class: [
+                    'inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-600 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
+                    'mx-2',
+                ],
+            },
+        },
+
+        backButton: {
+            attributes: {
+                class: [
+                    'inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-slate-700 bg-slate-200 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500',
+                    'mx-2',
+                ],
+            },
+        },
+
+        submitButton: {
+            attributes: {
+                class: [
+                    'font-bold border-2 rounded-[30px] text-lg lg:text-xl py-2 px-4 lg:w-[360px] flex justify-center items-center text-center mx-auto z-3 text-primary border-primary hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
+                    'mx-2 order-10',
+                ],
+            },
+        },
+
+        page: {
+            attributes: {
+                class: [
+                    "{{ form.hasMultiplePages() and page.id != currentPage.id ? 'hidden' : false }}",
+                ],
+            },
+        },
+
+        pageTabs: {
+            attributes: {
+                class: 'border-b border-gray-200 -mb-px flex space-x-8 mb-6',
+            },
+        },
+
+        pageTab: {
+            attributes: {
+                class: 'py-4 px-1',
+            },
+        },
+
+        pageTabLink: {
+            attributes: {
+                class: [
+                    'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm',
+                    "{{ (page.id == currentPage.id) ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' }}",
+                    "{{ page.getFieldErrors(submission) ? 'text-red-500' : false }}",
+                ],
+            },
+        },
+
+        pageTitle: {
+            attributes: {
+                class: 'text-lg leading-6 font-medium text-gray-900 mb-4',
+            },
+        },
+
+        progress: {
+            attributes: {
+                class: 'flex h-[1.2rem] text-sm text-white bg-slate-200 mt-4',
+            },
+        },
+
+        progressContainer: {
+            attributes: {
+                class: 'flex flex-col justify-center text-center font-medium bg-indigo-600',
+            },
+        },
+
+        subFieldRow: {
+            attributes: {
+                class: 'flex flex-wrap -mx-4 mb-4 last:mb-0',
+            },
+        },
+
+        nestedFieldRows: {
+            attributes: {
+                class: 'border py-4',
+            },
+        },
+
+        nestedFieldRow: {
+            attributes: {
+                class: 'flex flex-wrap mb-4 last:mb-0',
+            },
+        },
+
+        row: {
+            attributes: {
+                class: [
+                    'flex flex-wrap -mx-4 mb-4',
+                    "{{ not craft.formie.getVisibleFields(row) ? 'hidden' }}",
+                ],
+            },
+        },
+
+        field: {
+            attributes: {
+                class: 'px-4 flex-1 relative py-4',
+            },
+        },
+
+        fieldLabel: {
+            attributes: {
+                class: 'mb-1 block text-sm font-medium transition-all duration-150 ease-in-out text-secondary dark:text-white peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-white dark:peer-placeholder-shown:text-opacity-50 absolute left-10 -top-3 peer-placeholder-shown:text-xl peer-placeholder-shown:top-7',
+            },
+        },
+
+        fieldRequired: {
+            attributes: {
+                class: 'text-red-500 dark:text-red-300 text-lg mt-2',
+            },
+        },
+
+        fieldInstructions: {
+            attributes: {
+                class: 'mb-1 text-sm text-gray-500',
+            },
+        },
+
+        fieldInput: {
+            attributes: {
+                class: [
+                    'peer px-6 py-2 text-xl rounded-[30px] focus:ring-indigo-500 focus:border-indigo-500 block w-full border-2 border-input dark:border-white placeholder-transparent dark:bg-transparent',
+                    "{{ (submission.getErrors(field.handle) ?? null) ? 'border-red-300' }}",
+                ],
+            },
+        },
+
+        fieldError: {
+            attributes: {
+                class: 'text-red-500 text-sm mt-2',
+            },
+        },
+
+        fieldLimit: {
+            attributes: {
+                class: 'mt-2 text-sm text-gray-500',
+            },
+        },
+
+        agree: {
+            fieldOption: {
+                attributes: {
+                    class: 'flex items-center mb-6 relative px-6',
+                },
+            },
+
+            fieldOptionLabel: {
+                attributes: {
+                    class: 'ml-8 text-lg -mt-1',
+                },
+            },
+
+            fieldInput: {
+                resetClass: true,
+
+                attributes: {
+                    class: 'w-10',
+                },
+            },
+        },
+
+        checkboxes: {
+            fieldLabel: {
+                attributes: {
+                    class: '!relative !hidden',
+                },
+            },
+
+            fieldOption: {
+                attributes: {
+                    class: 'flex items-center mb-6 relative px-6',
+                },
+            },
+
+            fieldOptionLabel: {
+                attributes: {
+                    class: 'ml-4 text-xl',
+                },
+            },
+
+            fieldInput: {
+                resetClass: true,
+
+                attributes: {
+                    class: 'w-10 h-6 relative',
+                },
+            },
+        },
+
+        dropdown: {
+            fieldInput: {
+                resetClass: true,
+
+                attributes: {
+                    class: 'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md',
+                },
+            },
+        },
+
+        hiddenField: {
+            field: {
+                resetClass: true,
+
+                attributes: {
+                    class: 'hidden',
+                },
+            },
+        },
+
+        radioButtons: {
+            fieldOption: {
+                attributes: {
+                    class: 'flex items-start mb-2',
+                },
+            },
+
+            fieldOptionLabel: {
+                attributes: {
+                    class: 'ml-2 text-sm leading-4',
+                },
+            },
+
+            fieldInput: {
+                resetClass: true,
+
+                attributes: {
+                    class: 'focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300',
+                },
+            },
+        },
+
+        recipients: {
+            field: {
+                attributes: {
+                    class: [
+                        "{{ field.getIsHidden() ? 'hidden' : false }}",
+                    ],
+                },
+            },
+        },
+
+        repeater: {
+            nestedField: {
+                attributes: {
+                    class: 'relative',
+                },
+            },
+
+            nestedFieldWrapper: {
+                attributes: {
+                    class: 'mb-4',
+                },
+            },
+
+            fieldRemoveButton: {
+                attributes: {
+                    class: 'absolute top-0 right-0 m-1 inline-flex items-center px-2 py-1.5 border border-transparent text-xs font-medium rounded-md text-slate-700 bg-slate-200 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500',
+                },
+            },
+        },
+
+    },
+}) }}

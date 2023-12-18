@@ -1,0 +1,15 @@
+{% set color = color is defined ? color : 'primary' %}
+{% set classes = color == 'primary' ? 'border-primary typo--primary' : 'border-white' %}
+{% set batchNumber = (boxes|length / 2)|round(0, 'common') %}
+
+<div class="grid lg:grid-cols-2 items-center gap-12 my-24">
+    {% for row in boxes|batch(batchNumber) %}
+        <div class="grid gap-12">
+        {% for box in row  %}
+                <div class="{{ classes }} typo border-2 rounded-[30px] p-12">
+                    {{ box.text }}
+                </div>
+        {% endfor %}
+        </div>
+    {% endfor %}
+</div>

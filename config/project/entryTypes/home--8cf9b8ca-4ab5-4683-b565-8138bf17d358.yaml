@@ -1,0 +1,77 @@
+fieldLayouts:
+  28f68a5f-695b-4e0a-8ab0-9b4d411c3eb3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1c003e87-41d3-4e64-90c3-ff4430740476
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e1f04add-99dc-4c26-ba6b-9aa9d53775bb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38e9db7e-d1f9-42de-967b-6fde87ed6a89
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 9853fc64-3710-4ca7-adb8-3f0d857356de
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2cd21525-a1e4-4c17-88fb-57e3d404b5e4 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a9351fd-3762-4908-93eb-8fc74f702cea
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: a6335167-e704-4204-8a4c-3e3b1461d48f
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Startseite
+section: ac416553-6b08-4332-bd85-56ae4f3d13a1 # Startseite
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

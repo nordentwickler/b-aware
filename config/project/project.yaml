@@ -1,14 +1,216 @@
-dateModified: 1702471668
+dateModified: 1702644108
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Strukturen
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:40bbfc69-d990-4bff-b2a0-195c12380074' # Seiten
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:ac1633ec-21c4-4c62-ab5b-843117f4aed1' # Akkordion
+      type: native
+    -
+      key: 'section:533fbe08-ef5d-416e-b751-ed7b35818f0a' # Boxes
+      type: native
+    -
+      key: 'section:ed3eff32-9003-4681-94ad-8efe449bcc95' # Slides
+      type: native
 email:
-  fromEmail: brosch@webhub.de
+  fromEmail: $MAIL_SENDER
   fromName: 'b-aware Kollektiv AWARENESS BERLIN'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: null
+  transportSettings:
+    host: $MAILPIT_SMTP_HOSTNAME
+    password: ''
+    port: $MAILPIT_SMTP_PORT
+    useAuthentication: '0'
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
+fs:
+  files:
+    hasUrls: true
+    name: Dateien
+    settings:
+      path: uploads/files
+    type: craft\fs\Local
+    url: /uploads/files/
+  images:
+    hasUrls: true
+    name: Bilder
+    settings:
+      path: uploads/images
+    type: craft\fs\Local
+    url: /uploads/images/
 meta:
   __names__:
+    0ac8f27f-2c83-48a0-91c0-542b13b5bc8d: Bild # Bild
+    0c57faf4-05ad-42af-b124-9738fbe47123: Metanavigation # Metanavigation
+    0d462de6-2a29-403c-b654-1a12faa8fe3d: Überschrift # Überschrift
+    0e3bcaa0-4fa9-48d7-9767-fdd7003594c2: Slides # Slides
+    1b8eb24e-6cca-406d-8c0d-3a1987cba42b: Boxen # Boxen
+    1eb589d6-6f64-45f7-9be7-12d091c01f20: Standard # Standard
+    1f388f94-ec84-467a-8d39-fa0ca3a209a3: Simple # Simple
+    2cd21525-a1e4-4c17-88fb-57e3d404b5e4: SEO # SEO
+    3f0222c0-eb94-44c8-af59-eeb036164579: Text # Text
+    4f11c230-3baa-4c2a-a5b6-f188afb0653e: Bilder # Bilder
+    5be2d2a3-d3a1-4afd-bd96-316e7c102020: Dateien # Dateien
+    06a4e909-693c-42b8-b953-19f84b2de57c: 'Contact Form' # Contact Form
+    7b9d19c7-d976-4a05-a55e-0916ea152b22: Accordion # Accordion
+    8b3e774e-bc4d-4ff3-bf87-42ae24200c9c: Boxen # Boxen
+    8c78a235-6f44-4067-ac05-9940d78c9f7e: Elemente # Elemente
+    8cf9b8ca-4ab5-4683-b565-8138bf17d358: Startseite # Startseite
+    9cf63ed5-1744-48e3-9ab6-5e8f19dff553: Icon # Icon
+    9f129c1a-985e-4dfb-8b9e-bdf7ae0aec77: Text # Text
+    9ffffc94-02a3-45ad-b88e-3fd2064c640f: 'Überschriften Typ' # Überschriften Typ
+    011deec7-e5e9-4cd7-8108-327c42b7fb24: Überschrift # Überschrift
+    15a56b82-b871-436f-be00-97f6a0576798: Teaser # Teaser
+    16d9d27c-86c8-4462-92d8-441ff36ec60d: Text # Text
+    21d0ce87-b9a9-4b2a-aa80-c2b75d3eb050: 'Pinker Hintergrund' # Pinker Hintergrund
+    39d0bf3b-eea9-4c58-83f1-0393543b6945: E-Mail # E-Mail
+    40bbfc69-d990-4bff-b2a0-195c12380074: Seiten # Seiten
     40c3d08d-de67-43fd-b78e-08b64367c633: Common # Common
-    95121e66-126c-4507-ab4c-5b40c8aafa82: 'b-aware Kollektiv AWARENESS BERLIN' # b-aware Kollektiv AWARENESS BERLIN
-    aac80bdf-73ca-4d4b-958f-c9e8fecc66fe: 'b-aware Kollektiv AWARENESS BERLIN' # b-aware Kollektiv AWARENESS BERLIN
+    44e27a57-5f79-4a85-8111-0035d97ae7f5: Button # Button
+    091be3bd-20cf-4c59-88c6-8306b9944e98: Teaser # Teaser
+    95d26987-000c-4459-8953-40de42a47672: Bild # Bild
+    333f1aed-fd5f-4fbc-b7ba-adea6764b6b3: Einstellungen # Einstellungen
+    533fbe08-ef5d-416e-b751-ed7b35818f0a: Boxes # Boxes
+    613d0eb9-4e15-4078-9de0-ff483f23fb48: Überschrift # Überschrift
+    830f6d57-167b-4a13-8f21-ca42595ff2dc: Content # Content
+    1052a541-ec0e-4c68-b2ce-9a272db3f798: Kontaktformular # Kontaktformular
+    1174c6d2-258f-4569-8dc3-77d5158f847d: Settings # Settings
+    7916ded2-df90-45f0-88b1-edc5fde70c95: Standard # Standard
+    9144f991-2bc2-4808-9fe3-dfc85137a38a: Slider # Slider
+    83909f7b-2fea-4c92-9a40-6d0fc9e8d156: Slides # Slides
+    95121e66-126c-4507-ab4c-5b40c8aafa82: 'b-aware Kollektiv' # b-aware Kollektiv
+    403909c2-4900-4747-8252-17343816cb0e: 'Überschriften Typ' # Überschriften Typ
+    2707218e-0fb0-4060-8fc2-ceb816fe8f68: 'b-aware Default' # b-aware Default
+    8648726d-70fe-44d8-8063-c66760ba502b: Formular # Formular
+    a6be7884-83af-475c-92f1-9d23f720a8aa: New # New
+    a8c81878-6f9e-49d2-86c0-8480f22d90c0: Text # Text
+    a53e37b7-7d3a-4c27-98d6-7a074ff615ad: Formular # Formular
+    aac80bdf-73ca-4d4b-958f-c9e8fecc66fe: 'b-aware Kollektiv ' # b-aware Kollektiv 
+    ab8be9c5-40ea-495e-ba39-ff62650420cc: Button # Button
+    ac1633ec-21c4-4c62-ab5b-843117f4aed1: Akkordion # Akkordion
+    ac416553-6b08-4332-bd85-56ae4f3d13a1: Startseite # Startseite
+    ae3a976a-d079-4b20-88cf-bb1beaa7fd6b: 'Pinker Hintergrund' # Pinker Hintergrund
+    b0c5c514-091f-4684-8b80-874d45688d19: 'b-aware Kollektiv EN' # b-aware Kollektiv EN
+    b007a903-b9ae-49a1-970c-4c87ec46fabc: Standard # Standard
+    b8ec9721-c151-4901-81c8-b80bcf51ec94: 'Überschriften Typ' # Überschriften Typ
+    b46d75c1-f4e3-44f0-b6b4-55c72f1f314f: 'Kontaktblock auslbenden' # Kontaktblock auslbenden
+    bdacc1da-fca7-40e1-a8cb-55b2f323a1e1: 'Überschriften Typ' # Überschriften Typ
+    c41e4f4a-d355-40f8-ba9e-6d1fca7c77e0: Einstellungen # Einstellungen
+    c2448238-8d2b-4a46-8a86-183e603b3c25: Überschrift # Überschrift
+    d1dfed1c-7fe3-419a-87c0-514df0e76834: Hauptnavigation # Hauptnavigation
+    d2dbb30f-819d-4263-b35e-662df11f097b: Überschrift # Überschrift
+    d8782a07-f62f-4834-a9f4-964881f7bc00: Button # Button
+    ddf0f5a7-6220-4ac7-a17c-5bfb707cba5a: Überschrift # Überschrift
+    e1f04add-99dc-4c26-ba6b-9aa9d53775bb: Inhalt # Inhalt
+    e4ea66de-b364-48c9-b519-aa24a6826bac: Text # Text
+    e744d23d-e7ca-4764-a96b-558de279429b: 'Pinker Hintergrund' # Pinker Hintergrund
+    e6992b9b-5c55-47bf-aa25-5029b819e4f4: Überschrift # Überschrift
+    ed3eff32-9003-4681-94ad-8efe449bcc95: Slides # Slides
+    ef86271d-4df1-4d53-9560-f98ef27ffd2c: Standard # Standard
+    f5cef92f-f3c5-4dc8-ae85-e89bb8fc9fb6: 'Überschriften Typ' # Überschriften Typ
+    f26df144-21d0-4835-942e-b4a4425fe8c0: Text # Text
+    f44d8718-8502-4a91-bb1b-2ec3d2dfd3cc: Subline # Subline
+    fa3899c0-b659-4697-bffb-7ba9fcb8c2b6: Überschrift # Überschrift
+    ff43d63c-8e30-4e0f-bd79-0e20590038ca: Button # Button
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  elements-panel:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: UZUCKJ5X2R7XOMBIDIO14YM9
+    schemaVersion: 2.0.11
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      defaultDateDisplayType: calendar
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\BelowInput
+      defaultPage: forms
+      disabledFields:
+        - verbb\formie\fields\formfields\Address
+        - verbb\formie\fields\formfields\Calculations
+        - verbb\formie\fields\formfields\Categories
+        - verbb\formie\fields\formfields\Entries
+        - verbb\formie\fields\formfields\FileUpload
+        - verbb\formie\fields\formfields\Group
+        - verbb\formie\fields\formfields\Heading
+        - verbb\formie\fields\formfields\Hidden
+        - verbb\formie\fields\formfields\Html
+        - verbb\formie\fields\formfields\Payment
+        - verbb\formie\fields\formfields\Password
+        - verbb\formie\fields\formfields\Phone
+        - verbb\formie\fields\formfields\Repeater
+        - verbb\formie\fields\formfields\Signature
+        - verbb\formie\fields\formfields\Summary
+        - verbb\formie\fields\formfields\Table
+        - verbb\formie\fields\formfields\Tags
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableLargeFieldStorage: false
+      enableUnloadWarning: true
+      includeDraftElementUsage: false
+      includeRevisionElementUsage: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Formulare
+      queuePriority: null
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
+      validateCustomTemplates: true
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   vite:
     edition: standard
     enabled: true
@@ -16,7 +218,8 @@ plugins:
 system:
   edition: solo
   live: true
-  name: 'b-aware Kollektiv AWARENESS BERLIN'
+  name: 'b-aware Kollektiv'
+  retryDuration: null
   schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
 users:

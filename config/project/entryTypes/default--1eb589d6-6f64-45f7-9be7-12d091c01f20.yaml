@@ -1,0 +1,59 @@
+fieldLayouts:
+  a91eea77-b27a-4eb7-9e59-e41246926c3a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 748c7eff-0086-423d-82e1-757ea642862c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f26df144-21d0-4835-942e-b4a4425fe8c0 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 45a10557-457b-42e0-bffa-f4c3fe9162b7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 4bbba791-8bac-494c-b63c-d4d0a54faf0c
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: ac1633ec-21c4-4c62-ab5b-843117f4aed1 # Akkordion
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{text|striptags|u.truncate(50, ''...''}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

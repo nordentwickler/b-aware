@@ -1,0 +1,59 @@
+fieldLayouts:
+  1f8d3f79-5875-4292-8aaf-2ed36310f8e9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 73c2bbb9-3473-49fe-aee5-668cbfb5f316
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f26df144-21d0-4835-942e-b4a4425fe8c0 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf1f5c76-221f-44a9-8ae8-1a5f52eaf51c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 8c0b6a41-3346-42f2-909b-8e3bfe12e62e
+        userCondition: null
+handle: default
+hasTitleField: false
+name: Standard
+section: 533fbe08-ef5d-416e-b751-ed7b35818f0a # Boxes
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{text|striptags}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
