@@ -5,6 +5,11 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes">
     <link rel="home" href="{{ siteUrl }}"/>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
     {% hook 'seo' %}
     {% set settings = craft.entries.section('settings').with(['footerNavigation', 'mainNavigation', 'contactTeaser', 'contactTeaser.teaser:icon', 'contactForm']).one() %}
     {{ craft.vite.script('src/scripts/app.js', false) }}
@@ -12,7 +17,7 @@
 
 <body {{ craft.app.config.general.devMode ? 'data-dev-mode="true"' }}>
 
-<div id="app">
+<div id="app"  v-cloak>
     <header class="py-6 lg:py-12 z-50 relative">
         <div class="container max-w-6xl">
             <div class="flex justify-between items-center">
