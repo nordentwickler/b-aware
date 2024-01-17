@@ -23,9 +23,9 @@ webhub.de
   {{ craft.vite.script('src/scripts/app.js', false) }}
 </head>
 
-<body {{ craft.app.config.general.devMode ? 'data-dev-mode="true"' }} v-cloak>
+<body {{ craft.app.config.general.devMode ? 'data-dev-mode="true"' }} >
 
-<div id="app">
+<div id="app" v-cloak>
 
   {% include '_layouts/partials/header.twig' ignore missing %}
 
