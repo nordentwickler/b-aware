@@ -3,6 +3,7 @@ import Slider from '@components/Slider.vue';
 import NavigationButton from "@components/NavigationButton.vue";
 import Navigation from "@components/Navigation.vue";
 import AccordionItem from "@components/AccordionItem.vue"
+import Logo from "@components/Logo.vue";
 
 import { SwiperSlide } from "swiper/vue"
 
@@ -14,7 +15,8 @@ const app = createApp({
         SwiperSlide,
         NavigationButton,
         Navigation,
-        AccordionItem
+        AccordionItem,
+        Logo
     },
 });
 

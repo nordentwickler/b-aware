@@ -1,0 +1,47 @@
+fieldLayouts:
+  f3b6cf92-be41-4923-822e-9687342d6b4f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4a57d16f-fd2b-48fd-8796-d76cfd511205
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: ec5a91ae-0576-4f2a-8979-8610e5a0380b
+        userCondition: null
+handle: maintenace
+hasTitleField: true
+name: maintenace
+section: 6e90fce8-ab2b-42be-a334-63fdbf0f5deb # maintenace
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
