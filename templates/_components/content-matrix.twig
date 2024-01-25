@@ -45,6 +45,16 @@
             </section>
         {% endif %}
 
+    {% case 'form' %}
+
+        <section class="py-12">
+            <div class="container max-w-6xl">
+                {% include '_atoms/form.twig' with {
+                    form: block.form[0]
+                } %}
+            </div>
+        </section>
+
     {% case 'headline' %}
         {% if block.pinkBg %}
             <section class="bg-pink py-24 my-12 text-white">
