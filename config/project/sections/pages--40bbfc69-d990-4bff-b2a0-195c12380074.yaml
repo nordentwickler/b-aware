@@ -2,6 +2,18 @@ defaultPlacement: end
 enableVersioning: true
 handle: pages
 name: Seiten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - Default
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
   95121e66-126c-4507-ab4c-5b40c8aafa82: # b-aware Kollektiv
