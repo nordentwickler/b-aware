@@ -1,4 +1,4 @@
-dateModified: 1706172714
+dateModified: 1708522485
 elementSources:
   craft\elements\Entry:
     -
@@ -87,6 +87,7 @@ meta:
     40bbfc69-d990-4bff-b2a0-195c12380074: Seiten # Seiten
     40c3d08d-de67-43fd-b78e-08b64367c633: Common # Common
     44e27a57-5f79-4a85-8111-0035d97ae7f5: Button # Button
+    85eb8649-2b32-4f19-9273-47a8c62a745f: Datenschutzseite # Datenschutzseite
     091be3bd-20cf-4c59-88c6-8306b9944e98: Teaser # Teaser
     95d26987-000c-4459-8953-40de42a47672: Bild # Bild
     333f1aed-fd5f-4fbc-b7ba-adea6764b6b3: Einstellungen # Einstellungen
@@ -106,6 +107,7 @@ meta:
     a8c81878-6f9e-49d2-86c0-8480f22d90c0: Text # Text
     a53e37b7-7d3a-4c27-98d6-7a074ff615ad: Formular # Formular
     aac80bdf-73ca-4d4b-958f-c9e8fecc66fe: 'b-aware Kollektiv ' # b-aware Kollektiv 
+    ab6aeb28-79f1-4158-b417-8fa61ae57b85: 'PGP Key' # PGP Key
     ab8be9c5-40ea-495e-ba39-ff62650420cc: Button # Button
     ac1633ec-21c4-4c62-ab5b-843117f4aed1: Akkordion # Akkordion
     ac416553-6b08-4332-bd85-56ae4f3d13a1: Startseite # Startseite
