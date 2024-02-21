@@ -25,7 +25,7 @@ const props = defineProps({
       class="fixed bottom-0 left-0 right-0 h-screen top-0 z-40 w-full transform overflow-x-auto bg-primary transition-all duration-300 ease-in-out"
       :class="store.navigationOpen ? 'translate-y-0' : '-translate-y-full'"
   >
-    <div class="px-6 md:px-20 lg:px-40 pt-32 h-screen pb-48 flex flex-col justify-between lg:pt-[270px]">
+    <div class="px-6 md:px-20 lg:px-40 pt-48 h-screen pb-48 flex flex-col justify-between lg:pt-[270px]">
       <slot/>
     </div>
   </div>

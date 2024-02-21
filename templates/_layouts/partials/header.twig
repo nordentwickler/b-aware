@@ -13,14 +13,12 @@
     </nav>
     <ul class="flex flex-col sm:flex-row justify-center items-center my-8">
         {% for page in settings.footerNavigation %}
-            <li class="text-base lg:text-xl">
+            <li class="text-base lg:text-xl inline-flex items-center">
                 <a href="{{ page.url }}"
-                   class="text-white">
-                    {{ page.title }}
-                </a>
-                {{ not loop.last ? '<span class="mx-4 hidden sm:inline-flex text-white">/</span>' }}
+                   class="text-white">{{ page.title }}</a>
+                {{ not loop.last ? '<span class="mx-4 hidden sm:inline-flex bg-white rounded-full h-2 w-2 justify-center items-center"></span>' }}
             </li>
         {% endfor %}
     </ul>
-    <p class="text-white text-lg text-center">© {{ now|date('Y') }} — b-aware Kollektiv — Awareness Berlin</p>
+    <p class="text-white text-base xl:text-lg text-center inline-flex items-center justify-center flex-wrap">© {{ now|date('Y') }} <span class="mx-1 lg:mx-4 bg-white inline-flex rounded-full h-1.5 w-1.5 justify-center items-center"></span> b-aware Kollektiv — Awareness Berlin</p>
 </navigation>
