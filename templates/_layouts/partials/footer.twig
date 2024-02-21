@@ -13,20 +13,21 @@
 
     <ul class="flex flex-col sm:flex-row justify-center items-center my-12">
         {% for page in settings.footerNavigation %}
-            <li class="font-black text-xl">
+            <li class="font-black text-xl inline-flex items-center">
                 <a href="{{ page.url }}"
-                   class="text-primary hover:text-secondary dark:hover:text-white">
+                   class="text-primary hover:text-secondary dark:hover:text-white inline-flex items-center">
                     {{ page.title }}
                 </a>
-                {{ not loop.last ? '<span class="mx-4 hidden sm:inline-flex text-secondary dark:text-white">/</span>' }}
+                {{ not loop.last ? '<span class="mx-6 bg-secondary dark:bg-white hidden lg:inline-flex rounded-full h-2 w-2 justify-center items-center"></span>' }}
             </li>
         {% endfor %}
     </ul>
-    <p class="text-center text-base font-bold">&copy; {{ now|date('Y') }} <span
-                class="mx-4 hidden sm:inline-flex text-primary">/</span>
-        b-aware Kollektiv <span class="mx-4 hidden sm:inline-flex text-primary">/</span> Awareness Berlin <span
-                class="mx-4 hidden sm:inline-flex text-primary">/</span> made with love in MV by <a href="https://webhub.de" target="_blank" class="text-primary hover:text-secondary dark:hover:text-white">webhub</a></p>
+    <div class="flex justify-center">
 
+
+    <p class="text-center text-base font-bold flex-wrap  justify-center inline-flex items-center">&copy; {{ now|date('Y') }} <span class="mx-4 bg-primary inline-flex rounded-full h-1.5 w-1.5 justify-center items-center"></span>
+        b-aware Kollektiv <span class="mx-4 bg-primary inline-flex rounded-full h-1.5 w-1.5 justify-center items-center"></span> Awareness Berlin  <span class="mx-4 bg-primary   inline-flex rounded-full h-1.5 w-1.5 justify-center items-center"></span> <span>made with love in MV by <a href="https://webhub.de" target="_blank" class="text-primary hover:text-secondary dark:hover:text-white">webhub</a><span></span></p>
+    </div>
     <div class="flex justify-center py-24">
         <a href="#app"
            class="rounded-full border-2 border-primary inline-flex text-primary hover:bg-primary hover:text-white">
