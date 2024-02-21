@@ -5,7 +5,7 @@
           class="items-center flex flex-shrink-0 justify-between space-x-2 hover:cursor-pointer py-6"
           @click="toggleSVG"
       >
-        <span>
+        <span class="text-left">
           <span :class="summaryClasses">{{ title }}</span>
         </span>
 
@@ -50,3 +50,4 @@ export default {
   },
 }
 </script>
+

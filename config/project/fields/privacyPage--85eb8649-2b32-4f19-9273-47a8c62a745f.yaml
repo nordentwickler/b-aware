@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 40c3d08d-de67-43fd-b78e-08b64367c633 # Common
+handle: privacyPage
+instructions: null
+name: Datenschutzseite
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: null
+  showSiteMenu: false
+  sources:
+    - 'section:40bbfc69-d990-4bff-b2a0-195c12380074' # Seiten
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

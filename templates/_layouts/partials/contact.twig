@@ -1,55 +1,63 @@
 {% if entry.hideContact is defined and not entry.hideContact %}
 
-<section class="py-12 mt-24">
-    <div class="container max-w-6xl">
-        {% include '_atoms/headline.twig' with{
-            headlineType: 'h2',
-            headline:settings.contactHeadline,
-        } %}
-        {% include '_atoms/headline.twig' with{
-            headlineType: 'h3',
-            headline: settings.contactSubline
-        } %}
-        <div class="text-center typo">
-            {{ settings.contactText }}
-        </div>
-        <div class="mt-12 relative">
-            <div class="flex justify-center space-x-12">
-                <a href="/" class="text-primary">
-                    <svg width="60" height="60">
-                        <g fill="none" fill-rule="evenodd">
-                            <path d="M0 0h60v60H0z"  class="hover:fill-current"/>
-                            <path d="M27.75 44.775h4.5V25.5h-4.5v19.275ZM30 20.55c.7 0 1.3-.25 1.8-.75s.75-1.1.75-1.8-.25-1.3-.75-1.8-1.1-.75-1.8-.75-1.3.25-1.8.75-.75 1.1-.75 1.8.25 1.3.75 1.8 1.1.75 1.8.75ZM30 60c-7-1.75-12.75-5.813-17.25-12.188C8.25 41.438 6 34.45 6 26.85V9l24-9 24 9v17.85c0 7.6-2.25 14.587-6.75 20.962C42.75 54.188 37 58.25 30 60Zm0-2c6.487-2.105 11.776-6.08 15.865-11.923C49.955 40.233 52 33.683 52 26.427V10.142L30 2 8 10.142v16.285c0 7.256 2.045 13.806 6.135 19.65C18.225 51.921 23.513 55.895 30 58Z" class="fill-current" fill-rule="nonzero"/></g>
-                    </svg>
-                </a>
+    <section class="py-12 mt-24">
+        <div class="container max-w-6xl">
+            {% include '_atoms/headline.twig' with{
+                headlineType: 'h2',
+                headline:settings.contactHeadline,
+            } %}
+            {% include '_atoms/headline.twig' with{
+                headlineType: 'h3',
+                headline: settings.contactSubline
+            } %}
+            <div class="text-center typo">
+                {{ settings.contactText }}
+            </div>
+            <div class="mt-12 relative">
+                <div class="flex justify-center space-x-12">
+                    <a href="{{ settings.privacyPage|length ? settings.privacyPage[0].geturl : '#' }}" target="_blank"
+                       class="text-primary hover:text-white group">
 
-                {% include '_atoms/button.twig' with {
-                    button:  settings.contactMail,
-                } %}
+                        <svg width="48" height="60">
+                            <path d="M21.75 44.775h4.5V25.5h-4.5v19.275ZM24 20.55c.7 0 1.3-.25 1.8-.75s.75-1.1.75-1.8-.25-1.3-.75-1.8-1.1-.75-1.8-.75-1.3.25-1.8.75-.75 1.1-.75 1.8.25 1.3.75 1.8 1.1.75 1.8.75ZM24 60c-7-1.75-12.75-5.813-17.25-12.188C2.25 41.438 0 34.45 0 26.85V9l24-9 24 9v17.85c0 7.6-2.25 14.587-6.75 20.962C36.75 54.188 31 58.25 24 60Zm0-2c6.487-2.105 11.776-6.08 15.865-11.923C43.955 40.233 46 33.683 46 26.427V10.142L24 2 2 10.142v16.285c0 7.256 2.045 13.806 6.135 19.65C12.225 51.921 17.513 55.895 24 58Z" fill="#D52E7F" fill-rule="nonzero" class="group-hover:hidden"/>
 
-                <a href="/" class="text-primary">
+                            <g fill="none" fill-rule="evenodd" class="hidden group-hover:block"><path d="M24 60c-7-1.75-12.75-5.813-17.25-12.188C2.25 41.438 0 34.45 0 26.85V9l24-9 24 9v17.85c0 7.6-2.25 14.587-6.75 20.962C36.75 54.188 31 58.25 24 60Z" fill="#000"/><path d="M24 60c-7-1.75-12.75-5.813-17.25-12.188C2.25 41.438 0 34.45 0 26.85V9l24-9 24 9v17.85c0 7.6-2.25 14.587-6.75 20.962C36.75 54.188 31 58.25 24 60Z" fill="#D52E7F" fill-rule="nonzero"/><path fill="#FFF" fill-rule="nonzero" d="M21.75 44.775h4.5V25.5h-4.5zM24 20.55c.7 0 1.3-.25 1.8-.75s.75-1.1.75-1.8-.25-1.3-.75-1.8-1.1-.75-1.8-.75-1.3.25-1.8.75-.75 1.1-.75 1.8.25 1.3.75 1.8 1.1.75 1.8.75Z"/></g>
 
-                <svg width="60" height="60"><g fill="none" fill-rule="evenodd"><circle class="stroke-current" stroke-width="2" fill="#FFF" cx="30" cy="30" r="29"/><path d="M22 32.55c-.7 0-1.3-.25-1.8-.75s-.75-1.1-.75-1.8.25-1.3.75-1.8 1.1-.75 1.8-.75 1.3.25 1.8.75.75 1.1.75 1.8-.25 1.3-.75 1.8-1.1.75-1.8.75ZM22 39c-2.5 0-4.625-.875-6.375-2.625S13 32.5 13 30s.875-4.625 2.625-6.375S19.5 21 22 21c1.8 0 3.375.425 4.725 1.275 1.35.85 2.412 2.138 3.188 3.863h13.35l4.237 4.237-6.263 5.737-3.3-2.4-3.3 2.4-2.812-2.25h-1.912a8.502 8.502 0 0 1-2.944 3.694C25.63 38.52 23.975 39 22 39Zm0-2.25c1.45 0 2.788-.481 4.012-1.444 1.226-.962 2.013-2.194 2.363-3.693h4.275l2.025 1.687 3.3-2.362 3.075 2.325 3.188-2.963-1.913-1.913h-13.95c-.3-1.4-1.05-2.606-2.25-3.618-1.2-1.013-2.575-1.519-4.125-1.519-1.875 0-3.469.656-4.781 1.969C15.906 26.53 15.25 28.125 15.25 30c0 1.875.656 3.469 1.969 4.781C18.53 36.094 20.125 36.75 22 36.75Z" class="fill-current" fill-rule="nonzero"/></g></svg>
-                </a>
+                        </svg>
+                    </a>
+
+                    {% include '_atoms/button.twig' with {
+                        button:  settings.contactMail,
+                    } %}
+
+                    <a href="{{ settings.pgpKey|length ? settings.pgpKey[0].geturl : '#'}}" download class="text-primary group">
+
+                        <svg width="60" height="60">
+
+                            <g fill="none" fill-rule="evenodd" class="hidden group-hover:block"><circle fill="#D52E7F" cx="30" cy="30" r="30"/><path d="M22 32.55c-.7 0-1.3-.25-1.8-.75s-.75-1.1-.75-1.8.25-1.3.75-1.8 1.1-.75 1.8-.75 1.3.25 1.8.75.75 1.1.75 1.8-.25 1.3-.75 1.8-1.1.75-1.8.75ZM22 39c-2.5 0-4.625-.875-6.375-2.625S13 32.5 13 30s.875-4.625 2.625-6.375S19.5 21 22 21c1.8 0 3.375.425 4.725 1.275 1.35.85 2.412 2.138 3.188 3.863h13.35l4.237 4.237-6.263 5.737-3.3-2.4-3.3 2.4-2.812-2.25h-1.912a8.502 8.502 0 0 1-2.944 3.694C25.63 38.52 23.975 39 22 39Zm0-2.25c1.45 0 2.788-.481 4.012-1.444 1.226-.962 2.013-2.194 2.363-3.693h4.275l2.025 1.687 3.3-2.362 3.075 2.325 3.188-2.963-1.913-1.913h-13.95c-.3-1.4-1.05-2.606-2.25-3.618-1.2-1.013-2.575-1.519-4.125-1.519-1.875 0-3.469.656-4.781 1.969C15.906 26.53 15.25 28.125 15.25 30c0 1.875.656 3.469 1.969 4.781C18.53 36.094 20.125 36.75 22 36.75Z" fill="#FFF" fill-rule="nonzero"/></g>
+
+                            <g fill="none" fill-rule="evenodd" class="group-hover:hidden"><circle stroke="#D52E7F" stroke-width="2" cx="30" cy="30" r="29"/><path d="M22 32.55c-.7 0-1.3-.25-1.8-.75s-.75-1.1-.75-1.8.25-1.3.75-1.8 1.1-.75 1.8-.75 1.3.25 1.8.75.75 1.1.75 1.8-.25 1.3-.75 1.8-1.1.75-1.8.75ZM22 39c-2.5 0-4.625-.875-6.375-2.625S13 32.5 13 30s.875-4.625 2.625-6.375S19.5 21 22 21c1.8 0 3.375.425 4.725 1.275 1.35.85 2.412 2.138 3.188 3.863h13.35l4.237 4.237-6.263 5.737-3.3-2.4-3.3 2.4-2.812-2.25h-1.912a8.502 8.502 0 0 1-2.944 3.694C25.63 38.52 23.975 39 22 39Zm0-2.25c1.45 0 2.788-.481 4.012-1.444 1.226-.962 2.013-2.194 2.363-3.693h4.275l2.025 1.687 3.3-2.362 3.075 2.325 3.188-2.963-1.913-1.913h-13.95c-.3-1.4-1.05-2.606-2.25-3.618-1.2-1.013-2.575-1.519-4.125-1.519-1.875 0-3.469.656-4.781 1.969C15.906 26.53 15.25 28.125 15.25 30c0 1.875.656 3.469 1.969 4.781C18.53 36.094 20.125 36.75 22 36.75Z" fill="#D52E7F" fill-rule="nonzero"/></g>
+                        </svg>
+                    </a>
+                </div>
+
             </div>
 
-        </div>
+            <div class="py-24">
+                {% include '_atoms/form.twig' with {
+                    form: settings.contactForm[0]
+                } %}
+            </div>
 
-        <div class="py-24">
-            {% include '_atoms/form.twig' with {
-                form: settings.contactForm[0]
-            } %}
+            {% for entry in settings.contactTeaser %}
+                {% include '_components/blocks/teaser.twig' with {
+                    icon: entry.icon[0],
+                    headline: entry.headline,
+                    text: entry.text,
+                    button: entry.button
+                } %}
+            {% endfor %}
         </div>
-
-        {% for entry in settings.contactTeaser  %}
-            {% include '_components/blocks/teaser.twig' with {
-                icon: entry.icon[0],
-                headline: entry.headline,
-                text: entry.text,
-                button: entry.button
-            } %}
-        {% endfor %}
-    </div>
-</section>
+    </section>
 
 {% endif %}

@@ -141,6 +141,36 @@ fieldLayouts:
         name: Kontakt
         uid: 5b081603-ef9d-4b29-b099-056ea5b56347
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ab6aeb28-79f1-4158-b417-8fa61ae57b85 # PGP Key
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86d405a3-a471-4a78-aec6-4f230ad4671b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85eb8649-2b32-4f19-9273-47a8c62a745f # Datenschutzseite
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01863839-6c52-428b-be1d-f3e011465705
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'PGP und Datenschutz'
+        uid: 6cf851f9-a40e-4094-8db7-ad2ad0260ea6
+        userCondition: null
 handle: settings
 hasTitleField: false
 name: Einstellungen
