@@ -152,7 +152,7 @@
 
         fieldLabel: {
             attributes: {
-                class: 'mb-1 block text-sm font-medium transition-all duration-150 ease-in-out text-secondary dark:text-white peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-white dark:peer-placeholder-shown:text-opacity-50 absolute left-10 -top-3 peer-placeholder-shown:text-lg peer-placeholder-shown:lg:text-xl peer-placeholder-shown:top-8 peer-placeholder-shown:lg:top-7 max-w-[80%]',
+                class: 'mb-1 block text-sm font-medium transition-all duration-150 ease-in-out text-secondary dark:text-white peer-placeholder-shown:text-gray-400 dark:peer-placeholder-shown:text-white dark:peer-placeholder-shown:text-opacity-50 absolute left-7 lg:left-10 -top-3 peer-placeholder-shown:text-lg peer-placeholder-shown:lg:text-xl peer-placeholder-shown:top-7 peer-placeholder-shown:lg:top-7 max-w-[80%] whitespace-nowrap',
             },
         },
 
@@ -171,7 +171,7 @@
         fieldInput: {
             attributes: {
                 class: [
-                    'peer px-6 py-2 text-xl rounded-[30px] focus:ring-indigo-500 focus:border-indigo-500 block w-full border-2 border-input dark:border-white placeholder-transparent dark:bg-transparent',
+                    'peer px-2 lg:px-6 py-2 text-lg lg:text-xl rounded-[24px] lg:rounded-[30px] focus:ring-indigo-500 focus:border-indigo-500 block w-full border-2 border-input dark:border-white placeholder-transparent dark:bg-transparent',
                     "{{ (submission.getErrors(field.handle) ?? null) ? 'border-red-300' }}",
                 ],
             },
