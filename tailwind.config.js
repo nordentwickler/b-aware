@@ -8,7 +8,7 @@ module.exports = {
             xl: ['1.5625rem', '2.5rem'], // 25px
             '2xl': ['2.1875rem', '2.8125rem'], // 35px
             '3xl': ['2.5rem', '5rem'], // 40px
-            '4xl': ['3.125rem', '5.625rem'], // 50px
+            '4xl': ['3.125rem', '4.225rem'], // 50px
             '5xl': ['4.6875rem', '5.625rem'], // 75px
         },
         container: {
