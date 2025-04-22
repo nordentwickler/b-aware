@@ -1,4 +1,4 @@
-dateModified: 1744488841
+dateModified: 1745321576
 elementSources:
   craft\elements\Entry:
     -
@@ -136,6 +136,10 @@ meta:
     fa3899c0-b659-4697-bffb-7ba9fcb8c2b6: Überschrift # Überschrift
     ff43d63c-8e30-4e0f-bd79-0e20590038ca: Button # Button
 plugins:
+  _craft-panoptikum-cell:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   ckeditor:
     edition: standard
     enabled: true
