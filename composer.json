@@ -1,14 +1,14 @@
 {
   "name": "nordentwickler/b-aware",
   "require": {
-    "craftcms/ckeditor": "3.13.0",
-    "craftcms/cms": "4.15.3",
+    "craftcms/ckeditor": "3.14.1",
+    "craftcms/cms": "4.16.14",
     "craftcms/contact-form": "3.1.0",
     "ether/seo": "4.2.4",
     "nystudio107/craft-vite": "4.0.10",
     "putyourlightson/craft-elements-panel": "2.0.0",
     "sebastianlenz/linkfield": "2.1.5",
-    "verbb/formie": "2.1.47",
+    "verbb/formie": "2.2.5",
     "vlucas/phpdotenv": "^5.4.0",
     "webhubworks/craft-panoptikum-cell": "^1.3"
   },

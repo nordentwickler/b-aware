@@ -22,6 +22,7 @@
 /public/mix-manifest.json
 /public/web.config
 /public/assets/css/*
+/public/dist/**/*
 /public/assets/js/*
 /public/downloads/*
 /public/media/*
