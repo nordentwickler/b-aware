@@ -19,6 +19,9 @@ module.exports = {
             },
         },
         extend: {
+            maxWidth:{
+                '8xl': '90rem',
+            },
             zIndex: {
                 '60': 60,
                 '70': 70,

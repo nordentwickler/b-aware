@@ -22,7 +22,7 @@
     {% switch block.type %}
     {% case 'text' %}
         {% if block.pinkBg %}
-            <section class="bg-primary py-12 my-6 lg:py-24 lg:my-12 text-white">
+            <section class="bg-primary py-12 my-6 lg:py-24 lg:my-12 text-white mx-auto max-w-8xl">
                 <div class="container max-w-6xl">
                     {% include '_components/blocks/text.twig' with{
                         headlineType: block.headlineType,
@@ -47,7 +47,7 @@
 
     {% case 'form' %}
 
-        <section class="py-12">
+        <section class="py-12 ">
             <div class="container max-w-6xl">
                 {% include '_atoms/form.twig' with {
                     form: block.form[0]
@@ -82,7 +82,7 @@
             } %}
         </section>
     {% case 'slider' %}
-        <section class="bg-primary py-24 my-12 text-white">
+        <section class="bg-primary py-24 my-12 text-white mx-auto max-w-8xl">
             <div class="container max-w-6xl">
                 {% include '_components/blocks/slider.twig' with{
                     id: 'slider' ~ block.id,
@@ -123,7 +123,7 @@
 
     {% case 'boxen' %}
         {% if block.pinkBg %}
-            <section class="bg-primary py-24 my-12 text-white">
+            <section class="bg-primary py-24 my-12 text-white mx-auto max-w-8xl">
                 <div class="container max-w-6xl">
                     {% include '_components/blocks/text.twig' with{
                         headlineType: block.headlineType,
