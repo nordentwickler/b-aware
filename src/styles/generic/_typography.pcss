@@ -28,6 +28,9 @@ h2{
 
 h3{
     @apply text-xl lg:text-2xl font-bold mb-4 lg:mb-8;
+    a{
+        @apply underline hover:opacity-75;
+    }
 }
 
 .typo{
@@ -38,6 +41,12 @@ h3{
     }
     p + p{
         @apply mt-12;
+    }
+
+    p {
+        a{
+            @apply underline hover:opacity-75;
+        }
     }
 
     ul{
