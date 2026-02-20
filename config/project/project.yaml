@@ -1,4 +1,4 @@
-dateModified: 1767691443
+dateModified: 1771597888
 elementSources:
   craft\elements\Entry:
     -
@@ -580,7 +580,7 @@ system:
   live: true
   name: 'b-aware Kollektiv'
   retryDuration: null
-  schemaVersion: 4.15.0.0
+  schemaVersion: 4.17.0.3
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
