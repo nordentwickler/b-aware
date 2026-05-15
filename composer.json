@@ -2,7 +2,7 @@
   "name": "nordentwickler/b-aware",
   "require": {
     "craftcms/ckeditor": "3.15.0",
-    "craftcms/cms": "^4.17.15",
+    "craftcms/cms": "^4.17.16",
     "craftcms/contact-form": "3.1.0",
     "ether/seo": "4.2.4",
     "nystudio107/craft-vite": "4.0.10",
