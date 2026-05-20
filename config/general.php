@@ -21,7 +21,9 @@ return GeneralConfig::create()
     // Preload Single entries as Twig variables
     ->preloadSingles()
     // Allow administrative changes
-    ->allowAdminChanges(App::env('ALLOW_ADMIN_CHANGES') ?? false)
+    ->allowAdminChanges(App::env('ALLOW_ADMIN_CHANGES') ?: false)
+    // Allow updates
+    ->allowUpdates(App::env('ALLOW_UPDATES') ?: App::env('ALLOW_ADMIN_CHANGES') ?: false)
     // Prevent user enumeration attacks
     ->preventUserEnumeration()
     // Set the @webroot alias so the clear-caches command knows where to find CP resources
