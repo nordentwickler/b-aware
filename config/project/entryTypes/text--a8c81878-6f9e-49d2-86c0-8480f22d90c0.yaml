@@ -1,0 +1,95 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  77c4baba-62a2-4bdf-9fc5-7e2cf7341943:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:a011cb92-a9dc-45c4-8d4c-f52f516a50a0'
+      - 'layoutElement:c94f0a40-0b62-4f56-a5e9-5e60ac00b791'
+      - 'layoutElement:179ada71-4184-44ce-88fb-5db055b6f2ee'
+      - 'layoutElement:92895382-9f26-4d58-b334-57fd0a5bcd8a'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: fa3899c0-b659-4697-bffb-7ba9fcb8c2b6
+            handle: headline
+            instructions: null
+            label: Überschrift
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a011cb92-a9dc-45c4-8d4c-f52f516a50a0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b8ec9721-c151-4901-81c8-b80bcf51ec94
+            handle: null
+            instructions: null
+            label: 'Überschriften Typ'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c94f0a40-0b62-4f56-a5e9-5e60ac00b791
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9f129c1a-985e-4dfb-8b9e-bdf7ae0aec77 # Inhalt - Text - Text
+            handle: text
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 179ada71-4184-44ce-88fb-5db055b6f2ee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: e744d23d-e7ca-4764-a96b-558de279429b
+            handle: null
+            instructions: null
+            label: 'Pinker Hintergrund'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92895382-9f26-4d58-b334-57fd0a5bcd8a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f6382b6c-4cf9-4274-9be1-860119787115
+        userCondition: null
+    thumbFieldKey: null
+handle: text
+hasTitleField: false
+icon: null
+name: Text
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

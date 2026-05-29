@@ -46,10 +46,9 @@ fieldLayouts:
         name: Inhalt
         uid: 8c0b6a41-3346-42f2-909b-8e3bfe12e62e
         userCondition: null
-handle: default
+handle: boxes_default
 hasTitleField: false
 name: Standard
-section: 533fbe08-ef5d-416e-b751-ed7b35818f0a # Boxes
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

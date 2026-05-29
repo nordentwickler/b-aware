@@ -1,11 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: 7916ded2-df90-45f0-88b1-edc5fde70c95 # Standard
 handle: pages
+maxAuthors: 1
+minAuthors: 1
 name: Seiten
 previewTargets:
   -
-    label: Default
-    refresh: '1'
+    label: 'Primary entry page'
     urlFormat: '{url}'
 propagationMethod: all
 siteSettings:

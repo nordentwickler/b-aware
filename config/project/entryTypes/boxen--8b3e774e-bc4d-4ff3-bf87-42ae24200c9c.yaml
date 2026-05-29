@@ -1,0 +1,111 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  ee3c362c-78c4-44c5-bdf5-e1a39382b220:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:08619272-0f6b-4a8f-89de-9105c4f30cf2'
+      - 'layoutElement:5f42af63-9f11-4906-b32e-77fe3f3659d4'
+      - 'layoutElement:80e8564e-ed7f-4a23-9726-61f12a3f397c'
+      - 'layoutElement:833ffe66-74bd-4812-991b-e26cc77f8f5a'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d2dbb30f-819d-4263-b35e-662df11f097b
+            handle: headline
+            instructions: null
+            label: Überschrift
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08619272-0f6b-4a8f-89de-9105c4f30cf2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9ffffc94-02a3-45ad-b88e-3fd2064c640f
+            handle: headlineType
+            instructions: null
+            label: 'Überschriften Typ'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5f42af63-9f11-4906-b32e-77fe3f3659d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: e4ea66de-b364-48c9-b519-aa24a6826bac # Inhalt - Boxen - Text
+            handle: text
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80e8564e-ed7f-4a23-9726-61f12a3f397c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 1b8eb24e-6cca-406d-8c0d-3a1987cba42b
+            handle: null
+            instructions: null
+            label: Boxen
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ededbeaa-ea2d-4b42-9c04-2afe4541cb16
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ae3a976a-d079-4b20-88cf-bb1beaa7fd6b
+            handle: pinkBg
+            instructions: null
+            label: 'Pinker Hintergrund'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 833ffe66-74bd-4812-991b-e26cc77f8f5a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dd5ecebf-d125-438d-933e-3339f248890d
+        userCondition: null
+    thumbFieldKey: 'layoutElement:ededbeaa-ea2d-4b42-9c04-2afe4541cb16'
+handle: boxen
+hasTitleField: false
+icon: null
+name: Boxen
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

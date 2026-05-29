@@ -67,7 +67,6 @@ fieldLayouts:
 handle: home
 hasTitleField: false
 name: Startseite
-section: ac416553-6b08-4332-bd85-56ae4f3d13a1 # Startseite
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

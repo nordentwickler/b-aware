@@ -1,0 +1,16 @@
+columnSuffix: ffahxfqu
+handle: headline3
+instructions: null
+name: 'Inhalt - Überschrift - Überschrift'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

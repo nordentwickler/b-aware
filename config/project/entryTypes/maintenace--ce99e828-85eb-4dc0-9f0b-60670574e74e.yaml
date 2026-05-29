@@ -37,7 +37,6 @@ fieldLayouts:
 handle: maintenace
 hasTitleField: true
 name: maintenace
-section: 6e90fce8-ab2b-42be-a334-63fdbf0f5deb # maintenace
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

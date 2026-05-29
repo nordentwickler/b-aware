@@ -1,6 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: ef86271d-4df1-4d53-9560-f98ef27ffd2c # Standard
 handle: slides
+maxAuthors: 1
+minAuthors: 1
 name: Slides
 propagationMethod: all
 siteSettings:

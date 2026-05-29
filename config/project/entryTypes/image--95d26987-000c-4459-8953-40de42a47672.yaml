@@ -1,0 +1,42 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  a2dff1c1-e5c3-4d79-8f3a-b292e8f69aa4:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0ac8f27f-2c83-48a0-91c0-542b13b5bc8d
+            handle: null
+            instructions: null
+            label: Bild
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67f800f7-ce9a-4095-8d60-faa339b5ae02
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a211caa3-dafa-42e8-a2b3-fb6be11c33a7
+        userCondition: null
+    thumbFieldKey: 'layoutElement:67f800f7-ce9a-4095-8d60-faa339b5ae02'
+handle: image
+hasTitleField: false
+icon: null
+name: Bild
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -174,7 +174,6 @@ fieldLayouts:
 handle: settings
 hasTitleField: false
 name: Einstellungen
-section: c41e4f4a-d355-40f8-ba9e-6d1fca7c77e0 # Einstellungen
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
