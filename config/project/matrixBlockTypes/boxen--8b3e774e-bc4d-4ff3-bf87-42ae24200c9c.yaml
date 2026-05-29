@@ -84,17 +84,6 @@ fields:
       maintainHierarchy: false
       maxRelations: null
       minRelations: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Entry
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
       showSiteMenu: false
       sources:
@@ -187,15 +176,17 @@ fields:
     settings:
       availableTransforms: ''
       availableVolumes: '*'
+      characterLimit: null
       ckeConfig: 1f388f94-ec84-467a-8d39-fa0ca3a209a3 # Simple
       columnType: text
       defaultTransform: null
-      enableSourceEditingForNonAdmins: false
       purifierConfig: null
       purifyHtml: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       showWordCount: false
+      sourceEditingGroups:
+        - __ADMINS__
       wordLimit: null
     translationKeyFormat: null
     translationMethod: site

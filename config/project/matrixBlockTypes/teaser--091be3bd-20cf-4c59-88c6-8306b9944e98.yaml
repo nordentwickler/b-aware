@@ -103,17 +103,6 @@ fields:
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:4f11c230-3baa-4c2a-a5b6-f188afb0653e' # Bilder
       restrictedLocationSubpath: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Asset
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
       showSiteMenu: false
       showUnpermittedFiles: false
@@ -137,15 +126,17 @@ fields:
     settings:
       availableTransforms: ''
       availableVolumes: '*'
+      characterLimit: null
       ckeConfig: 1f388f94-ec84-467a-8d39-fa0ca3a209a3 # Simple
       columnType: text
       defaultTransform: null
-      enableSourceEditingForNonAdmins: false
       purifierConfig: null
       purifyHtml: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       showWordCount: false
+      sourceEditingGroups:
+        - __ADMINS__
       wordLimit: null
     translationKeyFormat: null
     translationMethod: site

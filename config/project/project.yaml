@@ -1,4 +1,4 @@
-dateModified: 1771597888
+dateModified: 1780043358
 elementSources:
   craft\elements\Entry:
     -
@@ -57,6 +57,10 @@ fs:
       path: uploads/images
     type: craft\fs\Local
     url: /uploads/images/
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
 meta:
   __names__:
     0ac8f27f-2c83-48a0-91c0-542b13b5bc8d: Bild # Bild

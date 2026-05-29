@@ -4,16 +4,9 @@ handle: home
 name: Startseite
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - Default
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: Default
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   95121e66-126c-4507-ab4c-5b40c8aafa82: # b-aware Kollektiv
