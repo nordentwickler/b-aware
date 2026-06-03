@@ -1,0 +1,93 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  378deb9b-9d75-4250-8954-5944bc7f1377:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:79cca564-9153-4d3f-9f48-1391f2fab1a8'
+      - 'layoutElement:01271d8a-927e-4c4e-97a0-9d8f208667be'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9cf63ed5-1744-48e3-9ab6-5e8f19dff553
+            handle: null
+            instructions: null
+            label: Icon
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d61bc770-8d4f-43d9-9300-a29c5622ceef
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0d462de6-2a29-403c-b654-1a12faa8fe3d
+            handle: null
+            instructions: null
+            label: Überschrift
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79cca564-9153-4d3f-9f48-1391f2fab1a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 16d9d27c-86c8-4462-92d8-441ff36ec60d # Teaser - Teaser - Text
+            handle: text
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01271d8a-927e-4c4e-97a0-9d8f208667be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ab8be9c5-40ea-495e-ba39-ff62650420cc
+            handle: button
+            instructions: null
+            label: Button
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5d49a9ef-9c6a-485e-a9b4-6596dd4a76fe
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d6391036-10ef-46c1-ac5f-41f733b4c7fd
+        userCondition: null
+    thumbFieldKey: 'layoutElement:d61bc770-8d4f-43d9-9300-a29c5622ceef'
+handle: teaser
+hasTitleField: false
+icon: null
+name: Teaser
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

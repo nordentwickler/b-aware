@@ -1,6 +1,5 @@
 columnSuffix: vixtcfdc
 contentColumnType: text
-fieldGroup: 1174c6d2-258f-4569-8dc3-77d5158f847d # Settings
 handle: contactText
 instructions: null
 name: Text
@@ -9,9 +8,21 @@ settings:
   availableTransforms: ''
   availableVolumes: '*'
   characterLimit: null
-  ckeConfig: 1f388f94-ec84-467a-8d39-fa0ca3a209a3 # Simple
   columnType: text
+  css: null
+  cssFile: null
   defaultTransform: null
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+  js: null
+  jsFile: null
+  options: null
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
@@ -19,6 +30,12 @@ settings:
   showWordCount: false
   sourceEditingGroups:
     - __ADMINS__
+  toolbar:
+    - heading
+    - '|'
+    - bold
+    - italic
+    - link
   wordLimit: null
 translationKeyFormat: null
 translationMethod: site

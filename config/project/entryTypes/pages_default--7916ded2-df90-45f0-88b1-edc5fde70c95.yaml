@@ -1,5 +1,5 @@
 fieldLayouts:
-  eb082ff5-fc65-4b3a-a9db-55067a106c17:
+  6beded8a-f049-45b3-9926-f385c1096850:
     tabs:
       -
         elementCondition: null
@@ -27,41 +27,58 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 36d8b4b9-0744-4464-83cb-b82f0b20c8da
+            uid: 3192852b-036a-4ab7-bd7b-1a146caab582
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: f26df144-21d0-4835-942e-b4a4425fe8c0 # Text
+            fieldUid: b46d75c1-f4e3-44f0-b6b4-55c72f1f314f # Kontaktblock auslbenden
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 61a2c0c1-913c-4865-88f6-cf8b52a75a64
+            uid: 6d178758-0a8f-48a2-be0d-e375e18a18db
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: d8782a07-f62f-4834-a9f4-964881f7bc00 # Button
+            fieldUid: e1f04add-99dc-4c26-ba6b-9aa9d53775bb # Inhalt
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a845bbea-8669-4c96-8558-a48e46965af3
+            uid: 9cbfb7dc-929e-4e91-b45c-aff69566e6e8
             userCondition: null
             warning: null
             width: 100
         name: Inhalt
-        uid: 4cc66db4-1e15-4050-a264-a1a98654fc42
+        uid: 030ead4c-4684-43ba-988d-bc843895e20a
         userCondition: null
-handle: default
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2cd21525-a1e4-4c17-88fb-57e3d404b5e4 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f1e01828-329e-4e13-9c65-bc5e705c625f
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: c83e3f28-f9ca-4b2a-822c-00b9feb06eac
+        userCondition: null
+handle: pages_default
 hasTitleField: true
 name: Standard
-section: ed3eff32-9003-4681-94ad-8efe449bcc95 # Slides
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

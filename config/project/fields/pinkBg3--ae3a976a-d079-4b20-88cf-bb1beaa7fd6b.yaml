@@ -1,0 +1,13 @@
+columnSuffix: oibkpycq
+handle: pinkBg3
+instructions: null
+name: 'Inhalt - Boxen - Pinker Hintergrund'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+  showLabelsInCards: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

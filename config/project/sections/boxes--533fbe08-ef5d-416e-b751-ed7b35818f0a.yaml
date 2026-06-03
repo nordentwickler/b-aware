@@ -1,6 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: b007a903-b9ae-49a1-970c-4c87ec46fabc # Standard
 handle: boxes
+maxAuthors: 1
+minAuthors: 1
 name: Boxes
 propagationMethod: all
 siteSettings:

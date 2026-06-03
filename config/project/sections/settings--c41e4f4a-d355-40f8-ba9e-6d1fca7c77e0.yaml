@@ -1,6 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 333f1aed-fd5f-4fbc-b7ba-adea6764b6b3 # Einstellungen
 handle: settings
+maxAuthors: 1
+minAuthors: 1
 name: Einstellungen
 propagationMethod: all
 siteSettings:

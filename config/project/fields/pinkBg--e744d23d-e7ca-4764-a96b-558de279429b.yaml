@@ -1,0 +1,13 @@
+columnSuffix: ilicyubp
+handle: pinkBg
+instructions: null
+name: 'Inhalt - Text - Pinker Hintergrund'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+  showLabelsInCards: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

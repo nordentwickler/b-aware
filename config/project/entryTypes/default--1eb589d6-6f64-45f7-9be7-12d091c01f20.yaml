@@ -49,11 +49,10 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Standard
-section: ac1633ec-21c4-4c62-ab5b-843117f4aed1 # Akkordion
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 sortOrder: 1
-titleFormat: '{text|striptags|u.truncate(50, ''...''}'
+titleFormat: "{text|striptags|u.truncate(50, '...'}"
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

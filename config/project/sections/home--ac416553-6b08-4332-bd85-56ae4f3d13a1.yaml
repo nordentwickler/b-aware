@@ -1,11 +1,15 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 8cf9b8ca-4ab5-4683-b565-8138bf17d358 # Startseite
 handle: home
+maxAuthors: 1
+minAuthors: 1
 name: Startseite
 previewTargets:
   -
-    label: Default
-    refresh: '1'
+    label: 'Primary entry page'
     urlFormat: '{url}'
 propagationMethod: all
 siteSettings:

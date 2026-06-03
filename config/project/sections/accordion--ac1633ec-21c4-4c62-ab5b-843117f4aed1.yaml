@@ -1,6 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 1eb589d6-6f64-45f7-9be7-12d091c01f20 # Standard
 handle: accordion
+maxAuthors: 1
+minAuthors: 1
 name: Akkordion
 propagationMethod: all
 siteSettings:

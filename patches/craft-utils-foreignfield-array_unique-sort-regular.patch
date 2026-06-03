@@ -1,0 +1,34 @@
+Fix "Object of class ... could not be converted to string" in ForeignFieldQueryListener.
+
+array_unique() defaults to SORT_STRING, which stringifies field objects while deduplicating.
+Fields without __toString() (e.g. verbb\formie\fields\Name) throw during Form::find()->all().
+SORT_REGULAR instead causes recursive object comparison ("Nesting level too deep") because
+Craft fields reference their field layout. Replace the chain with an explicit loop that filters
+to ForeignField and dedupes by uid, avoiding any object comparison.
+Upstream: https://github.com/sebastian-lenz/craft-utils
+
+--- a/src/foreignField/ForeignFieldQueryListener.php
++++ b/src/foreignField/ForeignFieldQueryListener.php
+@@ -50,14 +50,14 @@
+       ->getFields()
+       ->getLayoutsByType($query->elementType);
+ 
+-    $fields = array_filter(
+-      array_unique(array_reduce(
+-        $fieldLayouts,
+-        fn($fields, $fieldLayout) => array_merge($fields, $fieldLayout->getCustomFields()),
+-        []
+-      )),
+-      fn($field) => $field instanceof ForeignField
+-    );
++    $fields = [];
++    foreach ($fieldLayouts as $fieldLayout) {
++      foreach ($fieldLayout->getCustomFields() as $field) {
++        if ($field instanceof ForeignField) {
++          $fields[$field->uid] = $field;
++        }
++      }
++    }
+ 
+     foreach ($fields as $field) {
+       $queryClass = $field::queryExtensionClass();

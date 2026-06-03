@@ -1,0 +1,77 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  607dee80-0c4e-46a6-9725-9d53c15945f4:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:18368bd8-ed3a-4f37-b95c-75cdeb1f3faf'
+      - 'layoutElement:178aa08d-a4b7-42cd-98bf-d34cbd3babff'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ddf0f5a7-6220-4ac7-a17c-5bfb707cba5a
+            handle: headline
+            instructions: null
+            label: Überschrift
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 18368bd8-ed3a-4f37-b95c-75cdeb1f3faf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 403909c2-4900-4747-8252-17343816cb0e
+            handle: headlineType
+            instructions: null
+            label: 'Überschriften Typ'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 178aa08d-a4b7-42cd-98bf-d34cbd3babff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8c78a235-6f44-4067-ac05-9940d78c9f7e
+            handle: null
+            instructions: null
+            label: Elemente
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4fcf9e6-8cd1-48a6-be44-566422ec156d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ed4f4540-6079-4d09-a4b1-23c1e7abf8b9
+        userCondition: null
+    thumbFieldKey: 'layoutElement:a4fcf9e6-8cd1-48a6-be44-566422ec156d'
+handle: accordion
+hasTitleField: false
+icon: null
+name: Accordion
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'
