@@ -1,6 +1,6 @@
 {% set color = color is defined ? color : 'primary' %}
 {% set classes = color == 'primary' ? 'border-primary typo--primary' : 'border-white' %}
-{% set batchNumber = (boxes|length / 2)|round(0, 'common') %}
+{% set batchNumber = max(1, (boxes|length / 2)|round(0, 'common')) %}
 
 <div class="grid lg:grid-cols-2 items-center gap-12 my-24">
     {% for row in boxes|batch(batchNumber) %}
