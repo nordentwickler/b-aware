@@ -1,4 +1,4 @@
-{% spaceless %}
+{% apply spaceless %}
 {% macro isActive(slug, inheritClass, activeClass) %}
   {% if slug in craft.app.request.getSegments %}
     {{ activeClass }}
@@ -12,4 +12,4 @@
     {% endif %}
   {% endif %}
 {% endmacro %}
-{% endspaceless %}
+{% endapply %}
