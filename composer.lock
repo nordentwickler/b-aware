@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d10694f721e1a66d9fbbacc6476eb0c",
+    "content-hash": "70f3b996b1b49ff726590e9985e28eb7",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -9353,27 +9353,21 @@
         },
         {
             "name": "webhubworks/craft-panoptikum-cell",
-            "version": "1.4.0",
+            "version": "4.7.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:webhubworks/craft-panoptikum-cell.git",
-                "reference": "394756e7b06a71223dca68534b1517180ca5bcea"
+                "reference": "2cdc90226c699659a28683bd17714b2e147b04eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webhubworks/craft-panoptikum-cell/zipball/394756e7b06a71223dca68534b1517180ca5bcea",
-                "reference": "394756e7b06a71223dca68534b1517180ca5bcea",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://webhub.repo.repman.io/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://packages.webhub.de/dist/webhubworks/craft-panoptikum-cell/webhubworks-craft-panoptikum-cell-2cdc90226c699659a28683bd17714b2e147b04eb-zip-ab03a6.zip",
+                "reference": "2cdc90226c699659a28683bd17714b2e147b04eb",
+                "shasum": "329a6af3f6a391fd0f5a8b36059476a6b5a9b607"
             },
             "require": {
                 "php": ">=8.0.0",
-                "webhubworks/panoptikum-cell": "^1.1.1"
+                "webhubworks/panoptikum-cell": "^1.10.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -9388,38 +9382,31 @@
                     "webhubworks\\craftpanoptikumcell\\": "src/"
                 }
             },
-            "notification-url": "https://webhub.repo.repman.io/downloads",
             "description": "A craft wrapper around the webhubworks/panoptikum-cell package",
             "support": {
-                "source": "https://github.com/webhubworks/craft-panoptikum-cell/tree/4.0.0",
+                "source": "https://github.com/webhubworks/craft-panoptikum-cell/tree/4.7.0",
                 "issues": "https://github.com/webhubworks/craft-panoptikum-cell/issues"
             },
-            "time": "2025-04-22T14:38:42+00:00"
+            "time": "2026-10-22T14:04:54+00:00"
         },
         {
             "name": "webhubworks/panoptikum-cell",
-            "version": "1.6.3",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:webhubworks/panoptikum-cell.git",
-                "reference": "b35bc8c16ed3cc7fcbf3c5430922a3120105e3b2"
+                "reference": "58cce5e45e383f3594e0848c7ec387dfe65df7c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webhubworks/panoptikum-cell/zipball/b35bc8c16ed3cc7fcbf3c5430922a3120105e3b2",
-                "reference": "b35bc8c16ed3cc7fcbf3c5430922a3120105e3b2",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://webhub.repo.repman.io/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://packages.webhub.de/dist/webhubworks/panoptikum-cell/webhubworks-panoptikum-cell-58cce5e45e383f3594e0848c7ec387dfe65df7c0-zip-7de029.zip",
+                "reference": "58cce5e45e383f3594e0848c7ec387dfe65df7c0",
+                "shasum": "12370fac13f7b2b096eeb5f43c41b33964b12c2e"
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/guzzle": "^6.0 | ^7.0",
-                "php": "^7.4 | ^8.0"
+                "guzzlehttp/guzzle": "^6.0 | ^7.0 | ^8.0",
+                "php": "^8.0"
             },
             "require-dev": {
                 "laravel/pint": "^1.0",
@@ -9441,13 +9428,15 @@
                     "WebhubWorks\\PanoptikumCell\\Tests\\": "tests"
                 }
             },
-            "notification-url": "https://webhub.repo.repman.io/downloads",
             "scripts": {
                 "test": [
                     "vendor/bin/pest"
                 ],
                 "format": [
                     "vendor/bin/pint"
+                ],
+                "build-phar": [
+                    "@php -d phar.readonly=0 bin/build-phar.php"
                 ]
             },
             "license": [
@@ -9468,7 +9457,7 @@
                 "webhubworks"
             ],
             "support": {
-                "source": "https://github.com/webhubworks/panoptikum-cell/tree/1.6.3",
+                "source": "https://github.com/webhubworks/panoptikum-cell/tree/1.14.0",
                 "issues": "https://github.com/webhubworks/panoptikum-cell/issues"
             },
             "funding": [
@@ -9477,7 +9466,7 @@
                     "url": "https://github.com/webhubworks"
                 }
             ],
-            "time": "2026-05-28T19:53:04+00:00"
+            "time": "2026-10-26T10:58:12+00:00"
         },
         {
             "name": "webmozart/assert",
