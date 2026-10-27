@@ -1,0 +1,24 @@
+{# Formie 4 default, except that required fields always get the asterisk,
+   whatever the form's required indicator setting says. #}
+{# Even when hidden, the label should be output for accessibility #}
+{% if labelPosition.shouldDisplay(position) or (labelPosition == 'hidden' and position == 'above') %}
+    {% fieldtag 'fieldLabel' %}
+        {%- if fieldLabelPrefix -%}
+            {{- fieldLabelPrefix | raw }}
+        {%- endif -%}
+
+        {%- set fieldLabelContent = field.usesQuestionLabel()
+            ? field.getLabelHtml()
+            : field.label -%}
+
+        {{- fieldLabelContent | raw -}}
+
+        {%- if field.isRequired ?? required ?? false -%}
+            &nbsp;{% fieldtag 'fieldRequired' %}{{- '*' | t('formie') -}}{% endfieldtag %}
+        {%- endif -%}
+
+        {%- if fieldLabelSuffix -%}
+            &nbsp;{{- fieldLabelSuffix | raw -}}
+        {%- endif -%}
+    {% endfieldtag %}
+{% endif %}
