@@ -2,8 +2,8 @@ import { defineConfig, loadEnv } from 'vite';
 import manifestSRI from 'vite-plugin-manifest-sri';
 import path from 'path';
 import vue from '@vitejs/plugin-vue';
-import viteCompression from 'vite-plugin-compression';
-import ViteRestart from 'vite-plugin-restart';
+import { compression } from 'vite-plugin-compression2';
+import FullReload from 'vite-plugin-full-reload';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
@@ -14,35 +14,32 @@ export default defineConfig(({ command, mode }) => {
             commonjsOptions: {
                 transformMixedEsModules: false,
             },
-            manifest: true,
-            outDir: path.resolve(__dirname, 'public/dist/'),
+            manifest: 'manifest.json',
+            sourcemap: true,
+            outDir: path.resolve(import.meta.dirname, 'public/dist/'),
             rollupOptions: {
                 input: {
-                    app: path.resolve(__dirname, 'src/scripts/app.js'),
-                },
-                output: {
-                    sourcemap: true,
+                    app: path.resolve(import.meta.dirname, 'src/scripts/app.js'),
                 },
             },
         },
         plugins: [
             vue(),
             manifestSRI(),
-            viteCompression({
-                filter: /\.(js|mjs|json|css|map)$/i,
+            compression({
+                algorithms: ['gzip'],
+                include: /\.(js|mjs|json|css|map)$/i,
             }),
-            ViteRestart({
-                reload: ['templates/**/*'],
-            }),
+            FullReload(['templates/**/*']),
         ],
-        publicDir: path.resolve(__dirname, 'src/public'),
+        publicDir: path.resolve(import.meta.dirname, 'src/public'),
         resolve: {
             alias: {
-                '@': path.resolve(__dirname, 'src'),
-                '@scripts': path.resolve(__dirname, 'src/scripts'),
-                '@styles': path.resolve(__dirname, 'src/styles'),
+                '@': path.resolve(import.meta.dirname, 'src'),
+                '@scripts': path.resolve(import.meta.dirname, 'src/scripts'),
+                '@styles': path.resolve(import.meta.dirname, 'src/styles'),
                 '@components': path.resolve(
-                    __dirname,
+                    import.meta.dirname,
                     'src/scripts/components'
                 ),
                 vue: 'vue/dist/vue.esm-bundler.js',
