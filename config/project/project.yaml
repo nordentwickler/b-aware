@@ -1,4 +1,4 @@
-dateModified: 1780056745
+dateModified: 1793134540
 elementSources:
   craft\elements\Entry:
     -
@@ -65,8 +65,8 @@ meta:
     3f0222c0-eb94-44c8-af59-eeb036164579: Text # Text
     4f11c230-3baa-4c2a-a5b6-f188afb0653e: Bilder # Bilder
     5be2d2a3-d3a1-4afd-bd96-316e7c102020: Dateien # Dateien
-    06a4e909-693c-42b8-b953-19f84b2de57c: 'Contact Form' # Contact Form
     6e90fce8-ab2b-42be-a334-63fdbf0f5deb: maintenace # maintenace
+    8c4d425f-86da-4d77-8d55-7fbfcae0c6b7: Active # Active
     8cf9b8ca-4ab5-4683-b565-8138bf17d358: Startseite # Startseite
     9f129c1a-985e-4dfb-8b9e-bdf7ae0aec77: 'Inhalt - Text - Text' # Inhalt - Text - Text
     011deec7-e5e9-4cd7-8108-327c42b7fb24: Überschrift # Überschrift
@@ -77,12 +77,14 @@ meta:
     85eb8649-2b32-4f19-9273-47a8c62a745f: Datenschutzseite # Datenschutzseite
     333f1aed-fd5f-4fbc-b7ba-adea6764b6b3: Einstellungen # Einstellungen
     533fbe08-ef5d-416e-b751-ed7b35818f0a: Boxes # Boxes
+    657ca08c-e043-4cf0-bdda-b4898f0761c5: Archived # Archived
     1052a541-ec0e-4c68-b2ce-9a272db3f798: Kontaktformular # Kontaktformular
     7916ded2-df90-45f0-88b1-edc5fde70c95: Standard # Standard
+    9361de8e-e277-4b89-b3fe-e0492fc8afd4: Draft # Draft
     95121e66-126c-4507-ab4c-5b40c8aafa82: 'b-aware Kollektiv' # b-aware Kollektiv
     2707218e-0fb0-4060-8fc2-ceb816fe8f68: 'b-aware Default' # b-aware Default
     a6be7884-83af-475c-92f1-9d23f720a8aa: New # New
-    aac80bdf-73ca-4d4b-958f-c9e8fecc66fe: 'b-aware Kollektiv ' # b-aware Kollektiv 
+    aac80bdf-73ca-4d4b-958f-c9e8fecc66fe: 'b-aware Kollektiv ' # b-aware Kollektiv
     ab6aeb28-79f1-4158-b417-8fa61ae57b85: 'PGP Key' # PGP Key
     ac1633ec-21c4-4c62-ab5b-843117f4aed1: Akkordion # Akkordion
     ac416553-6b08-4332-bd85-56ae4f3d13a1: Startseite # Startseite
@@ -120,369 +122,119 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: UZUCKJ5X2R7XOMBIDIO14YM9
-    schemaVersion: 3.4.12
+    schemaVersion: 4.0.86
     settings:
       ajaxTimeout: 10
       alertEmails: null
-      captchas:
-        __assoc__:
-          -
-            - recaptcha
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\Recaptcha
-                -
-                  - enabled
-                  - '0'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      0:
-                        - handle
-                        - recaptcha
-                      3:
-                        - type
-                        - v3
-                      4:
-                        - size
-                        - normal
-                      5:
-                        - theme
-                        - light
-                      6:
-                        - badge
-                        - bottomright
-                      7:
-                        - language
-                        - en
-                      8:
-                        - minScore
-                        - 0.5
-                      9:
-                        - scriptLoadingMethod
-                        - asyncDefer
-                      10:
-                        - enterpriseType
-                        - score
-          -
-            - hcaptcha
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\Hcaptcha
-                -
-                  - enabled
-                  - '0'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      0:
-                        - handle
-                        - hcaptcha
-                      3:
-                        - size
-                        - normal
-                      4:
-                        - theme
-                        - light
-                      5:
-                        - language
-                        - en
-                      6:
-                        - minScore
-                        - 0.5
-                      7:
-                        - scriptLoadingMethod
-                        - asyncDefer
-          -
-            - friendlyCaptcha
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\FriendlyCaptcha
-                -
-                  - enabled
-                  - '1'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      -
-                        - handle
-                        - friendlyCaptcha
-                      -
-                        - secretKey
-                        - A1K028T0GD47Q7VOOT597OBUF0VUBB1JHMJETS57BKHVHRS1DLU7194SUO
-                      -
-                        - siteKey
-                        - FCMG50Q2RFQB4J62
-                      -
-                        - language
-                        - de
-                      -
-                        - startMode
-                        - none
-          -
-            - turnstile
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\Turnstile
-                -
-                  - enabled
-                  - '0'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      0:
-                        - handle
-                        - turnstile
-                      3:
-                        - scriptLoadingMethod
-                        - asyncDefer
-                      4:
-                        - theme
-                        - auto
-                      5:
-                        - size
-                        - normal
-                      6:
-                        - appearance
-                        - always
-          -
-            - duplicate
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\Duplicate
-                -
-                  - enabled
-                  - '1'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      -
-                        - handle
-                        - duplicate
-          -
-            - honeypot
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\Honeypot
-                -
-                  - enabled
-                  - '1'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      -
-                        - handle
-                        - honeypot
-          -
-            - javascript
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\Javascript
-                -
-                  - enabled
-                  - '0'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      -
-                        - handle
-                        - javascript
-          -
-            - akismet
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\Akismet
-                -
-                  - enabled
-                  - '0'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      -
-                        - handle
-                        - akismet
-          -
-            - captchaEu
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\CaptchaEu
-                -
-                  - enabled
-                  - '0'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      0:
-                        - handle
-                        - captchaEu
-                      3:
-                        - endPoint
-                        - 'https://www.captcha.eu'
-          -
-            - cleantalk
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\CleanTalk
-                -
-                  - enabled
-                  - '0'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      -
-                        - handle
-                        - cleantalk
-          -
-            - OopSpam
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\OopSpam
-                -
-                  - enabled
-                  - '0'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      -
-                        - handle
-                        - OopSpam
-          -
-            - question
-            -
-              __assoc__:
-                -
-                  - type
-                  - verbb\formie\integrations\captchas\Question
-                -
-                  - enabled
-                  - '0'
-                -
-                  - saveSpam
-                  - true
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      -
-                        - handle
-                        - question
-      defaultDateDisplayType: calendar
-      defaultDateTime: null
-      defaultDateValueOption: ''
+      alertEmailsUserGroup: null
+      allowHiddenFieldTemplates: true
+      allowHtmlFieldTemplateIncludes: true
+      allowHtmlFieldTwig: true
+      allowLegacySignatureImageUrls: true
+      allowMultiSelectDropdowns: true
+      allowPhoneCountrySelector: true
+      allowPublicVolumes: true
+      allowedSubmitMethods: both
+      anonymousFormBootstrapRateLimit: 30
+      anonymousFormRateWindowSeconds: 60
+      anonymousFormRefreshRateLimit: 120
+      compatibilityMode: true
+      completionQueryAllowlist:
+        - utm_source
+        - utm_medium
+        - utm_campaign
+        - utm_term
+        - utm_content
+      defaultCpSubmissionFieldConditions: follow
       defaultEmailTemplate: ''
-      defaultFileUploadVolume: ''
+      defaultErrorMessagePosition: verbb\formie\positions\BelowInput
+      defaultExportFolder: '@storage/formie-export'
+      defaultFormStencil: ''
       defaultFormTemplate: ''
       defaultInstructionsPosition: verbb\formie\positions\AboveInput
       defaultLabelPosition: verbb\formie\positions\BelowInput
       defaultPage: forms
-      disabledFields:
-        - verbb\formie\fields\formfields\Address
-        - verbb\formie\fields\formfields\Calculations
-        - verbb\formie\fields\formfields\Categories
-        - verbb\formie\fields\formfields\Entries
-        - verbb\formie\fields\formfields\FileUpload
-        - verbb\formie\fields\formfields\Group
-        - verbb\formie\fields\formfields\Heading
-        - verbb\formie\fields\formfields\Hidden
-        - verbb\formie\fields\formfields\Html
-        - verbb\formie\fields\formfields\Payment
-        - verbb\formie\fields\formfields\Password
-        - verbb\formie\fields\formfields\Phone
-        - verbb\formie\fields\formfields\Repeater
-        - verbb\formie\fields\formfields\Signature
-        - verbb\formie\fields\formfields\Summary
-        - verbb\formie\fields\formfields\Table
-        - verbb\formie\fields\formfields\Tags
+      deliveryEvidenceRetentionDays: 30
       emptyValuePlaceholder: 'No response.'
       enableBackSubmission: true
       enableCsrfValidationForGuests: true
       enableLargeFieldStorage: false
+      enableMultiPageForms: true
       enableUnloadWarning: true
+      encryptionKey: null
+      errorAriaLive: polite
+      fieldDefaults:
+        __assoc__:
+          -
+            - verbb\formie\fields\Date
+            -
+              __assoc__:
+                -
+                  - displayType
+                  - calendar
+                -
+                  - defaultOption
+                  - ''
+      filterIntegrationMapping: true
       includeDraftElementUsage: false
+      includeFlatpickrCss: true
       includeRevisionElementUsage: false
+      integrationAlertEmails: null
+      integrationAlertEmailsUserGroup: null
+      integrationApiErrorHandling:
+        -
+          __assoc__:
+            -
+              - severity
+              - rate_limited
+            -
+              - action
+              - logWarning
+        -
+          __assoc__:
+            -
+              - severity
+              - rejected
+            -
+              - action
+              - logWarning
+        -
+          __assoc__:
+            -
+              - severity
+              - failure
+            -
+              - action
+              - failQueue
+      maxEmailAttachmentSizeMb: 15
       maxIncompleteSubmissionAge: 30
       maxSentNotificationsAge: 30
+      maxStagedUploadBytes: 67108864
+      maxStagedUploadFiles: 50
       outputConsoleMessages: true
+      paymentWebhookProxyUrl: null
       pdfPaperOrientation: portrait
       pdfPaperSize: letter
+      plainTextHtmlSanitizationMode: preserve
       pluginName: Formulare
       queuePriority: null
-      saveSpam: true
+      redirectUri: null
+      reportAsyncExportRowThreshold: 1000
+      reportExportSingleUseDownload: true
+      reportInteractiveExportExpiryHours: 72
+      reportScheduledExportExpiryHours: 48
+      reportTablePageSize: 100
+      requireHtmlPurification: false
+      saveResumeTokenTtlDays: 14
       sendEmailAlerts: false
+      sendIntegrationAlerts: false
       sentNotifications: true
       setOnlyCurrentPagePayload: false
-      spamBehaviour: showSuccess
-      spamBehaviourMessage: ''
-      spamEmailNotifications: false
-      spamKeywords: ''
-      spamLimit: 500
-      useEmailTemplateForFieldVariables: false
+      staticCacheRefreshOnLoad: false
+      submissionSidebarFormOrder: dateCreatedDesc
+      submissionStateRetentionDays: 30
+      submissionsBehaviour: all
+      useCssLayers: false
       useQueueForIntegrations: true
       useQueueForNotifications: true
       validateCustomTemplates: true
@@ -544,7 +296,7 @@ system:
   live: true
   name: 'b-aware Kollektiv'
   retryDuration: null
-  schemaVersion: 5.10.0.0
+  schemaVersion: 5.11.0.2
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
