@@ -1,7 +1,7 @@
 name: B-Aware-Berlin
 type: craftcms
 docroot: public
-php_version: "8.2"
+php_version: "8.5"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
@@ -14,7 +14,7 @@ webimage_extra_packages: [chromium, poppler-utils, ca-certificates, fonts-libera
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
-nodejs_version: "16"
+nodejs_version: "22"
 corepack_enable: false
 
 # Key features of DDEV's config.yaml:

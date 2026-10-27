@@ -1,46 +1,34 @@
-{% hook 'formie.field.field-before' %}
-
-{% set value = value ?? renderOptions.value ?? field.getFieldValue(element) %}
-{% set errors = field.getFieldErrors(element) %}
+{# Formie 4 default, except that a label positioned below the input is
+   rendered right after it, inside the same container. The floating label
+   styles in `_atoms/form.twig` rely on `peer-placeholder-shown`, which only
+   matches a label that is a later sibling of the input. #}
+{% set value = value ?? field.getElementValue(element) %}
+{% set errors = element ? element.submissionErrors.forValuePath(field.errorKey()) : [] %}
 
 {% set labelPosition = craft.formie.getLabelPosition(field, form) %}
-{% set subfieldLabelPosition = craft.formie.getLabelPosition(field, form, true) %}
+{% set subFieldLabelPosition = craft.formie.getLabelPosition(field, form, true) %}
 {% set instructionsPosition = craft.formie.getInstructionsPosition(field, form) %}
+{% set errorMessagePosition = craft.formie.getErrorMessagePosition(field, form) %}
 
 {% fieldtag 'field' %}
+    {% fieldtag 'fieldLayout' %}
+        {{ formieInclude('field/label', { position: 'above' }) }}
+        {{ formieInclude('field/label', { position: 'left' }) }}
 
-    {% hook 'formie.field.field-start' %}
+        {% fieldtag 'fieldContent' %}
+            {{ formieInclude('field/instructions', { position: 'above' }) }}
+            {{ formieInclude('field/errors', { position: 'above' }) }}
 
-    {% fieldtag 'fieldContainer' %}
-        {% hook 'formie.field.input-before' %}
+            {% fieldtag 'fieldControl' %}
+                {{ field.renderInput(form, value) }}
 
-        {{ formieInclude('_includes/label', { position: 'above' }) }}
-        {{ formieInclude('_includes/instructions', { position: 'above' }) }}
+                {{ formieInclude('field/label', { position: 'below' }) }}
+            {% endfieldtag %}
 
-        {% fieldtag 'fieldInputContainer' %}
-            {% hook 'formie.field.input-start' %}
-
-            {{ field.getFrontEndInputHtml(form, value, {
-                submission: element,
-                errors: errors,
-            }) }}
-
-            {{ formieInclude('_includes/label', { position: 'below' }) }}
-
-            {% hook 'formie.field.input-end' %}
+            {{ formieInclude('field/instructions', { position: 'below' }) }}
+            {{ formieInclude('field/errors', { position: 'below' }) }}
         {% endfieldtag %}
 
-
-        {{ formieInclude('_includes/instructions', { position: 'below' }) }}
-
-        {% hook 'formie.field.input-after' %}
+        {{ formieInclude('field/label', { position: 'right' }) }}
     {% endfieldtag %}
-
-    {% if errors %}
-        {{ formieInclude('_includes/field-errors') }}
-    {% endif %}
-
-    {% hook 'formie.field.field-end' %}
 {% endfieldtag %}
-
-{% hook 'formie.field.field-after' %}

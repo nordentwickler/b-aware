@@ -8,30 +8,30 @@
             },
         },
 
-        alertError: {
+        messageError: {
             attributes: {
                 class: 'rounded-[30px] bg-red-50 text-xl text-red-500  px-6 pt-4 pb-3 mb-4',
             },
         },
 
-        alertSuccess: {
+        messageSuccess: {
             attributes: {
                 class: 'rounded-[30px] bg-green-50 text-xl text-green-700  px-6 pt-4 pb-3 mb-4',
             },
         },
 
-        buttonWrapper: {
+        pageButtons: {
             attributes: {
                 class: [
                     'flex justify-start -mx-2',
-                    "{{ buttonsPosition == 'right' ? 'justify-end' }}",
-                    "{{ buttonsPosition == 'center' ? 'justify-center' }}",
-                    "{{ buttonsPosition == 'left-right' ? 'justify-between' }}",
-                    "{{ buttonsPosition == 'right-save-left' ? 'justify-start flex-row-reverse' }}",
-                    "{{ buttonsPosition == 'center-save-left' ? 'justify-center flex-row-reverse' }}",
-                    "{{ buttonsPosition == 'center-save-right' ? 'justify-center' }}",
-                    "{{ buttonsPosition == 'save-right' ? 'justify-between' }}",
-                    "{{ buttonsPosition == 'save-left' ? 'justify-between flex-row-reverse' }}",
+                    { if: { path: 'page.buttonsPosition', equals: 'right' }, then: 'justify-end' },
+                    { if: { path: 'page.buttonsPosition', equals: 'center' }, then: 'justify-center' },
+                    { if: { path: 'page.buttonsPosition', equals: 'left-right' }, then: 'justify-between' },
+                    { if: { path: 'page.buttonsPosition', equals: 'right-save-left' }, then: 'justify-start flex-row-reverse' },
+                    { if: { path: 'page.buttonsPosition', equals: 'center-save-left' }, then: 'justify-center flex-row-reverse' },
+                    { if: { path: 'page.buttonsPosition', equals: 'center-save-right' }, then: 'justify-center' },
+                    { if: { path: 'page.buttonsPosition', equals: 'save-right' }, then: 'justify-between' },
+                    { if: { path: 'page.buttonsPosition', equals: 'save-left' }, then: 'justify-between flex-row-reverse' },
                 ],
             },
         },
@@ -72,7 +72,7 @@
         page: {
             attributes: {
                 class: [
-                    "{{ form.hasMultiplePages() and page.id != currentPage.id ? 'hidden' : false }}",
+                    { if: { and: [{ path: 'form.hasMultiplePages', truthy: true }, { path: 'page.isActive', truthy: false }] }, then: 'hidden' },
                 ],
             },
         },
@@ -93,8 +93,8 @@
             attributes: {
                 class: [
                     'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm',
-                    "{{ (page.id == currentPage.id) ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' }}",
-                    "{{ page.getFieldErrors(submission) ? 'text-red-500' : false }}",
+                    { if: 'page.isActive', then: 'border-indigo-500 text-indigo-600', else: 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' },
+                    { if: 'page.hasErrors', then: 'text-red-500' },
                 ],
             },
         },
@@ -139,7 +139,7 @@
             attributes: {
                 class: [
                     'flex flex-wrap -mx-4 mb-4',
-                    "{{ not craft.formie.getVisibleFields(row) ? 'hidden' }}",
+                    { if: 'row.isHidden', then: 'hidden' },
                 ],
             },
         },
@@ -172,7 +172,7 @@
             attributes: {
                 class: [
                     'peer px-2 lg:px-6 py-2 text-lg lg:text-xl rounded-[24px] lg:rounded-[30px] focus:ring-indigo-500 focus:border-indigo-500 block w-full border-2 border-input dark:border-white placeholder-transparent dark:bg-transparent',
-                    "{{ (submission.getErrors(field.handle) ?? null) ? 'border-red-300' }}",
+                    { if: 'field.hasErrors', then: 'border-red-300' },
                 ],
             },
         },
@@ -190,6 +190,14 @@
         },
 
         agree: {
+            fieldLabel: {
+                resetClass: true,
+
+                attributes: {
+                    class: 'sr-only',
+                },
+            },
+
             fieldOption: {
                 attributes: {
                     class: 'flex items-center mb-6 relative px-2 lg:px-6 justify-start',
@@ -249,7 +257,7 @@
             },
         },
 
-        hiddenField: {
+        hidden: {
             field: {
                 resetClass: true,
 
@@ -259,7 +267,7 @@
             },
         },
 
-        radioButtons: {
+        radio: {
             fieldOption: {
                 attributes: {
                     class: 'flex items-start mb-2',
@@ -285,7 +293,7 @@
             field: {
                 attributes: {
                     class: [
-                        "{{ field.getIsHidden() ? 'hidden' : false }}",
+                        { if: 'field.isHidden', then: 'hidden' },
                     ],
                 },
             },
